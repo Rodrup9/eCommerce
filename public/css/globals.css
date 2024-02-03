@@ -1,0 +1,140 @@
+/*funete*/
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
+
+:root {
+
+    /* Hexadecimal */
+
+    --mirage-50: #f4f6fb;
+    --mirage-100: #e8edf6;
+    --mirage-200: #cbdaec;
+    --mirage-300: #9eb9db;
+    --mirage-400: #6a95c6;
+    --mirage-500: #4778b0;
+    --mirage-600: #355f94;
+    --mirage-700: #2c4c78;
+    --mirage-800: #284264;
+    --mirage-900: #253855;
+    --mirage-950: #131c2b; /* Color Principal */
+  
+    --bridesmaid-50: #fef5f2;
+    --bridesmaid-100: #feece5; /* Color Principal */
+    --bridesmaid-200: #fed9ca;
+    --bridesmaid-300: #fcbda5;
+    --bridesmaid-400: #f79772;
+    --bridesmaid-500: #ee7445;
+    --bridesmaid-600: #db5927;
+    --bridesmaid-700: #b8481d;
+    --bridesmaid-800: #993e1b;
+    --bridesmaid-900: #7f381d;
+    --bridesmaid-950: #451b0a;
+
+    --white-50: #ffffff; /* Color Principal */
+    --white-100: #efefef;
+    --white-200: #dcdcdc;
+    --white-300: #bdbdbd;
+    --white-400: #989898;
+    --white-500: #7c7c7c;
+    --white-600: #656565;
+    --white-700: #525252;
+    --white-800: #464646;
+    --white-900: #3d3d3d;
+    --white-950: #292929;
+
+    --black-50: #f6f6f6;
+    --black-100: #e7e7e7;
+    --black-200: #d1d1d1;
+    --black-300: #b0b0b0;
+    --black-400: #888888;
+    --black-500: #6d6d6d;
+    --black-600: #5d5d5d;
+    --black-700: #4f4f4f;
+    --black-800: #454545;
+    --black-900: #3d3d3d;
+    --black-950: #000000; /*Color Principal */
+
+    --gamboge-50: #fcf8ea;
+    --gamboge-100: #f7eeca;
+    --gamboge-200: #f1dc97;
+    --gamboge-300: #e8c35c;
+    --gamboge-400: #e0a92f;
+    --gamboge-500: #d99923; /* Color Principal */
+    --gamboge-600: #b4711a;
+    --gamboge-700: #905218;
+    --gamboge-800: #78421b;
+    --gamboge-900: #66381d;
+    --gamboge-950: #3b1c0d;
+    
+    --shark-50: #f6f6f6;
+    --shark-100: #e7e7e7;
+    --shark-200: #d1d1d1;
+    --shark-300: #b0b0b0;
+    --shark-400: #888888;
+    --shark-500: #6d6d6d;
+    --shark-600: #5d5d5d;
+    --shark-700: #4f4f4f;
+    --shark-800: #454545;
+    --shark-900: #3d3d3d;
+    --shark-950: #262626; /* Color Principal */
+
+    --tuatara-50: #f7f7f6;
+    --tuatara-100: #e5e5e2;
+    --tuatara-200: #c9cac5;
+    --tuatara-300: #a6a7a1;
+    --tuatara-400: #82847d;
+    --tuatara-500: #686a62;
+    --tuatara-600: #52544d;
+    --tuatara-700: #434540;
+    --tuatara-800: #383936;
+    --tuatara-900: #343532; /* Color Principal */
+    --tuatara-950: #1b1b18;
+
+    --masala-50: #f6f6f6;
+    --masala-100: #e7e7e7;
+    --masala-200: #d1d1d1;
+    --masala-300: #b0b0b0;
+    --masala-400: #888888;
+    --masala-500: #6d6d6d;
+    --masala-600: #5d5d5d;
+    --masala-700: #4f4f4f;
+    --masala-800: #474747; /* Color Principal */
+    --masala-900: #3d3d3d;
+    --masala-950: #262626;/*Menu oscuro*/
+
+    --fuentePrincipal: #fff;
+    --fuenteSecundaria: ;
+    --colorPrincipal: #474747;
+    --colorFondo: #343532;
+    --colorHeader: #262626;
+  }
+
+html{
+    scroll-behavior:smooth;
+    /*font-size: 62.5%;*/ /*es igual a 10 px y a un rem*/
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: Poppins, 'IBM Plex Sans', sans-serif;
+    font-weight: 400;   
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+/*
+img{
+    max-width: 100%;
+    display: block;
+}*/
