@@ -15,7 +15,7 @@
 {{-- Contenido de la pagina --}}
 @section('main')
     <main class="boxOfertas">
-        <div class="tittle"><p>Ofertas especiales</p> <a class="verMas" href="#">Ver más</a></div>
+        <div class="tittle"><p>Ofertas especiales</p> <a class="verMas" href="catalogo/ofertas">Ver más</a></div>
         <div class="boxSliderOfertas">
             <div class="boxBoxOfertas">
                 <div class="boxOfertaMain">
@@ -30,7 +30,58 @@
     </main>
 
     <section class="section sugerencias">
-        <div class="tittle"><p>Busqiedas recientes</p> <a class="verMas" href="#">Ver más</a></div>
+        <div class="tittle"><p>Busqiedas recientes</p> <a class="verMas" href="catalogo/recientes">Ver más</a></div>
+        <div class="boxProductos">
+            <div class="arrow">
+                    <i class='bx bxs-chevron-left arrowIcon'></i>
+            </div>
+            <div class="sliderProductos">
+                <div class="sliderBoxProductos">
+                    <x-card-product :img="$img">
+                        <x-slot name="producto">{{$nombre}}</x-slot>
+                        <x-slot name="tag">{{$tag}}</x-slot>
+                        <x-slot name="descuento">{{$descuento}}</x-slot>
+                        <x-slot name="precio">{{$precio}}</x-slot>
+                        {{$description}}
+                    </x-card-product>
+                    <x-card-product :img="$img">
+                        <x-slot name="producto">{{$nombre}}</x-slot>
+                        <x-slot name="tag">{{$tag}}</x-slot>
+                        <x-slot name="descuento">{{$descuento}}</x-slot>
+                        <x-slot name="precio">{{$precio}}</x-slot>
+                        {{$description}}
+                    </x-card-product>
+                    <x-card-product :img="$img">
+                        <x-slot name="producto">{{$nombre}}</x-slot>
+                        <x-slot name="tag">{{$tag}}</x-slot>
+                        <x-slot name="descuento">{{$descuento}}</x-slot>
+                        <x-slot name="precio">{{$precio}}</x-slot>
+                        {{$description}}
+                    </x-card-product>
+                    <x-card-product :img="$img">
+                        <x-slot name="producto">{{$nombre}}</x-slot>
+                        <x-slot name="tag">{{$tag}}</x-slot>
+                        <x-slot name="descuento">{{$descuento}}</x-slot>
+                        <x-slot name="precio">{{$precio}}</x-slot>
+                        {{$description}}
+                    </x-card-product>
+                    <x-card-product :img="$img">
+                        <x-slot name="producto">{{$nombre}}</x-slot>
+                        <x-slot name="tag">{{$tag}}</x-slot>
+                        <x-slot name="descuento">{{$descuento}}</x-slot>
+                        <x-slot name="precio">{{$precio}}</x-slot>
+                        {{$description}}
+                    </x-card-product>
+                </div>
+            </div>
+            <div class="arrow">
+                    <i class='bx bxs-chevron-right arrowIcon'></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="section ">
+        <div class="tittle"><p>Sugerencias</p> <a class="verMas" href="catalogo/sugerencias">Ver más</a></div>
         <div class="boxProductos">
             <div class="arrow">
                     <i class='bx bxs-chevron-left arrowIcon'></i>
@@ -109,86 +160,7 @@
     </section>
 
     <section class="section ">
-        <div class="tittle"><p>Sugerencias</p> <a class="verMas" href="#">Ver más</a></div>
-        <div class="boxProductos">
-            <div class="arrow">
-                    <i class='bx bxs-chevron-left arrowIcon'></i>
-            </div>
-            <div class="sliderProductos">
-                <div class="sliderBoxProductos">
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem debitis quo harum dignissimos explicabo doloribus ut dolorem illo quas dolores.</p>
-                        </div>
-                    </div>
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">Descripcion breve</p>
-                        </div>
-                    </div>
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">Descripcion breve</p>
-                        </div>
-                    </div>
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">Descripcion breve</p>
-                        </div>
-                    </div>
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">Descripcion breve</p>
-                        </div>
-                    </div>
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">OUBNM</p>
-                        </div>
-                    </div>
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">Descripcion breve</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="arrow">
-                    <i class='bx bxs-chevron-right arrowIcon'></i>
-            </div>
-        </div>
-    </section>
-
-    <section class="section ">
-        <div class="tittle"><p>Tendencias</p> <a class="verMas" href="#">Ver más</a></div>
+        <div class="tittle"><p>Tendencias</p> <a class="verMas" href="catalogo/tendencias">Ver más</a></div>
         <div class="boxProductos">
             <div class="arrow">
                     <i class='bx bxs-chevron-left arrowIcon'></i>
@@ -274,69 +246,13 @@
             </div>
             <div class="sliderProductos">
                 <div class="sliderBoxProductos">
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem debitis quo harum dignissimos explicabo doloribus ut dolorem illo quas dolores.</p>
-                        </div>
-                    </div>
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">Descripcion breve</p>
-                        </div>
-                    </div>
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">Descripcion breve</p>
-                        </div>
-                    </div>
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">Descripcion breve</p>
-                        </div>
-                    </div>
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">Descripcion breve</p>
-                        </div>
-                    </div>
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">OUBNM</p>
-                        </div>
-                    </div>
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">Descripcion breve</p>
-                        </div>
-                    </div>
+                    <x-card-product :img="$img">
+                        <x-slot name="producto">{{$nombre}}</x-slot>
+                        <x-slot name="tag">{{$tag}}</x-slot>
+                        <x-slot name="descuento">{{$descuento}}</x-slot>
+                        <x-slot name="precio">{{$precio}}</x-slot>
+                        {{$description}}
+                    </x-card-product>
                 </div>
             </div>
             <div class="arrow">

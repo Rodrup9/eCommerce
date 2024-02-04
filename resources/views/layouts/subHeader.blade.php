@@ -7,7 +7,7 @@
     <div class="listaOption">
 {{-- Agreguen un elseif y condicionen el nombre de su modulo con la variable, utilicen las misma estructura de las 'a' para poner sus opciones--}}
         @if ($nameView == "Home" || $nameView == "Catalogo")
-            <a href="#" class="opcionSecundaria">Tecnologia</a>
+            <a href="catalogo/recientes" class="opcionSecundaria">Tecnologia</a>
             <a href="#" class="opcionSecundaria">Hogar</a>
             <a href="#" class="opcionSecundaria">Electrodomesticos</a>
             <a href="#" class="opcionSecundaria">Video Juegos</a>

@@ -21,18 +21,6 @@
     overflow: hidden;
 }
 
-.verMas{
-    color: var(--white-50);
-    text-decoration: none;
-    border: 1px solid var(--white-50);
-    border-radius: 5px;
-    padding: 0px 10px;
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .boxBoxOfertas{
     display: flex;
     height: 100%;
@@ -53,7 +41,7 @@
 }
 
 .oferta1, .oferta2, .oferta3, .oferta4, .oferta5{
-    background-color: var(--masala-800);
+    background-color: var(--colorPrincipal);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,7 +121,103 @@
 
 .detalles{
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
     width: 100%;
     padding: 10px;
+    gap: 2px;
+}
+
+.moreDetalles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.iconOption{
+    display: flex;
+    gap: 10px;
+}
+
+.iconoCard{
+    font-size: 20px;
+    transition: all 200ms;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    
+}
+
+.iconoCard:hover{
+    background-color: var(--colorFondo);
+}
+
+.tag{
+    display: flex;
+    justify-content: flex-start;
+    background-color: yellow;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.tag p{
+    color: var(--black-950);
+    font-weight: 500;
+}
+
+.priceDes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.precioActivo{
+    position: relative;
+    z-index: 0;
+    opacity: .5;
+}
+
+.precioActivo::after{
+    position: absolute;
+    content: "";
+    width: 110%;
+    height: 2px;
+    background-color: red;
+    transform-origin: center;
+    transform: rotate(8deg);
+    z-index: 100;
+    top: 10px;
+    left: -2px;
+    opacity: 1;
+}
+
+.descuento{
+    color: rgb(0, 255, 0);
+}
+
+/*verMas*/
+
+.verMas{
+    color: var(--fuentePrincipal);
+    text-decoration: none;
+    border: 1px solid var(--fuentePrincipal);
+    border-radius: 5px;
+    padding: 0px 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    transition: all 200ms;
+}
+
+.verMas:hover{
+    background-color: var(--hoverPrincipal);
+    color: var(--fuentePrincipal);
+    border-color: var(--hoverPrincipal);
 }

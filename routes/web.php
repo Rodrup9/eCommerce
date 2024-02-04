@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CatalogoController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 
@@ -23,7 +24,9 @@ Route::get('/', function () {
 Route::prefix('ecommerce')->group(function(){
     Route::controller(HomeController::class)->group(function(){
         Route::get('/home', 'index');
-        Route::get('/catalogo', 'catalogo');
+    });
+    Route::controller(CatalogoController::class)->group(function(){
+        Route::get('/catalogo/{filter?}', 'index');
     });
     //Agreguen aqui otos grupos para sus modulo--------------Esa es mi idea----
 });

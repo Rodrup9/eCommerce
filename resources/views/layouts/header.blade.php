@@ -27,6 +27,9 @@
                 </div>
             </div>
             <div class="menuLeft">
+                @if ($nameView != "Home")
+                    <a href="../home" class="opcionPrincipal">Home</a>
+                @endif
                 <a href="#" class="opcionPrincipal">Iniciar sesión</a>
                 <a href="#" class="opcionPrincipal">Registrarse</a>
             </div>
