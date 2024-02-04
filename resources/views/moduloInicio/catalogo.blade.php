@@ -1,0 +1,19 @@
+@extends('layouts.header')
+
+
+@section('cssPage')
+    <link rel="stylesheet" href="/css/moduloInicio.css">
+@endsection
+
+
+@section('subMenu')
+    @include('layouts.subHeader')
+@endsection
+
+@section('main')
+
+@endsection
+
+@section('jsPage')
+
+@endsection

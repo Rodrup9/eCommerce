@@ -7,30 +7,6 @@
 
     /* Hexadecimal */
 
-    --mirage-50: #f4f6fb;
-    --mirage-100: #e8edf6;
-    --mirage-200: #cbdaec;
-    --mirage-300: #9eb9db;
-    --mirage-400: #6a95c6;
-    --mirage-500: #4778b0;
-    --mirage-600: #355f94;
-    --mirage-700: #2c4c78;
-    --mirage-800: #284264;
-    --mirage-900: #253855;
-    --mirage-950: #131c2b; /* Color Principal */
-  
-    --bridesmaid-50: #fef5f2;
-    --bridesmaid-100: #feece5; /* Color Principal */
-    --bridesmaid-200: #fed9ca;
-    --bridesmaid-300: #fcbda5;
-    --bridesmaid-400: #f79772;
-    --bridesmaid-500: #ee7445;
-    --bridesmaid-600: #db5927;
-    --bridesmaid-700: #b8481d;
-    --bridesmaid-800: #993e1b;
-    --bridesmaid-900: #7f381d;
-    --bridesmaid-950: #451b0a;
-
     --white-50: #ffffff; /* Color Principal */
     --white-100: #efefef;
     --white-200: #dcdcdc;
@@ -66,18 +42,6 @@
     --gamboge-800: #78421b;
     --gamboge-900: #66381d;
     --gamboge-950: #3b1c0d;
-    
-    --shark-50: #f6f6f6;
-    --shark-100: #e7e7e7;
-    --shark-200: #d1d1d1;
-    --shark-300: #b0b0b0;
-    --shark-400: #888888;
-    --shark-500: #6d6d6d;
-    --shark-600: #5d5d5d;
-    --shark-700: #4f4f4f;
-    --shark-800: #454545;
-    --shark-900: #3d3d3d;
-    --shark-950: #262626; /* Color Principal */
 
     --tuatara-50: #f7f7f6;
     --tuatara-100: #e5e5e2;
@@ -103,6 +67,9 @@
     --masala-900: #3d3d3d;
     --masala-950: #262626;/*Menu oscuro*/
 
+
+    /* Utilicen estas variables de abajo para los colores de su interfaz */
+
     --fuentePrincipal: #fff;
     --fuenteSecundaria: ;
     --colorPrincipal: #474747;
@@ -123,6 +90,11 @@ html{
     line-height: 1.8;
     font-family: Poppins, 'IBM Plex Sans', sans-serif;
     font-weight: 400;   
+}
+
+body{
+    background-color: var(--colorFondo);
+    color: var(--fuentePrincipal);
 }
 
 ul{

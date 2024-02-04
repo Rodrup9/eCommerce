@@ -1,46 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/home.css">
-    <link rel="stylesheet" href="/css/globals.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Home</title>
-</head>
-<body>
-    <header class="menuGeneral">
-        <nav class="menuPrincipal">
-            <div class="menuRight">
-                <i class="logo">
-                    
-                </i>
-                <div class="boxBuscador">
-                    <div class="lupa">
-                        <i class='bx bx-search'></i>
-                    </div>
-                    <input type="search" name="" class="buscador" id="" placeholder="Buscar">
-                </div>
-            </div>
-            <div class="menuLeft">
-                <a href="#" class="opcionPrincipal">Iniciar sesión</a>
-                <a href="#" class="opcionPrincipal">Registrarse</a>
-            </div>
-        </nav>
-        <nav class="menuSecundario">
-            <div class="menuHamburger">
-                <i class='bx bx-menu iconMenu'></i>
-            </div>
-            <div class="listaOption">
-                <a href="#" class="opcionSecundaria">Tecnologia</a>
-                <a href="#" class="opcionSecundaria">Hogar</a>
-                <a href="#" class="opcionSecundaria">Electrodomesticos</a>
-                <a href="#" class="opcionSecundaria">Video Juegos</a>
-                <a href="#" class="opcionSecundaria">Ropa</a>
-            </div>
-        </nav>
-    </header>
+@extends('layouts.header')
 
+{{-- Agreguen solo el archivo css del modulo en el que están --}}
+{{-- El resto de estilos se encuentran en el archivo globales --}}
+@section('cssPage')
+    <link rel="stylesheet" href="/css/moduloInicio.css">
+@endsection
+
+{{-- Agregar esta parte si necesitan el submenu --}}
+@section('subMenu')
+    @include('layouts.subHeader')
+@endsection
+{{--  --}}
+
+{{-- Contenido de la pagina --}}
+@section('main')
     <main class="boxOfertas">
         <div class="tittle"><p>Ofertas especiales</p> <a class="verMas" href="#">Ver más</a></div>
         <div class="boxSliderOfertas">
@@ -375,5 +348,9 @@
     <footer>
         
     </footer>
-</body>
-</html>
+@endsection
+
+{{-- Agregar los js de su modulo --}}
+@section('jsPage')
+    <script src=""></script>
+@endsection

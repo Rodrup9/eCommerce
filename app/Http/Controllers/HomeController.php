@@ -8,6 +8,14 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     function index(){
-        return view('home');
+        return view('moduloInicio.home', [
+            'nameView' => 'Home'
+        ]);
+    }
+
+    function catalogo(){
+        return view('moduloInicio.catalogo', [
+            'nameView' => 'Catalogo'
+        ]);
     }
 }
