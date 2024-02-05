@@ -1,3 +1,8 @@
+:root{
+    --displayAside: none;
+    /*--transformAside: 0;*/
+}
+
 .menuGeneral{
     display: flex;
     flex-direction: column;
@@ -8,6 +13,7 @@
     justify-content: space-between;
     padding: 10px 20px;
     background-color: var(--colorHeader);
+    transition: all 200ms;
 }
 
 .menuRight{
@@ -21,20 +27,43 @@
     border-radius: 10px
 }
 
-.menuPrincipal a, .menuPrincipal, .menuSecundario a, .menuSecundario{
+.menuPrincipal a, .menuPrincipal{
     color: var(--fuentePrincipal);
     text-decoration: none;
+    transition: all 200ms;
+}
+
+.menuSecundario a, .menuSecundario{
+    color: var(--fuenteSecundaria);
+    text-decoration: none;
+    transition: all 200ms;
 }
 
 .menuSecundario{
     display: flex;  
     background-color: var(--colorPrincipal);
+    box-shadow: var(--boxShadowSubmenu);
     padding: 10px 20px;
     box-sizing: border-box;
+    transition: all 200ms;
 }
 
 .menuHamburger{
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.menuHamburger i{
+    transition: all 200ms;
+    cursor: pointer;
+}
+
+.menuHamburger i:hover{
+    transform: scale(1.08);
+    color: var(--hoverPrincipal);
 }
 
 .listaOption{
@@ -52,32 +81,30 @@
 .lupa{
     width: 30px;
     min-height: 100%;
-    border: 1px solid var(--white-50);
+    border: 1px solid var(--fuentePrincipal);
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px 0px 0px 5px;
+    transition: all 200ms;
+    color: var(--fuentePrincipal);
+    cursor: pointer;
 }
 
 .buscador{
     background-color: transparent;
-    border: 1px solid var(--white-50);
+    border: 1px solid var(--fuentePrincipal);
     border-radius: 0 5px 5px 0;
     width: 450px;
     padding: 0 5px 0 15px;
-    color: var(--white-50);
+    color: var(--fuentePrincipal);
+    transition: all 200ms;
 }
 
 .menuLeft{
     display: flex;
     gap: 20px;
-}
-
-.menuHamburger{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
 }
 
 .iconMenu{
@@ -89,7 +116,7 @@
 }
 
 .opcionPrincipal:hover{
-    color: var(--gamboge-500);
+    color: var(--hoverPrincipal);
 }
 
 .opcionSecundaria{
@@ -98,4 +125,72 @@
 
 .opcionSecundaria:hover{
     text-decoration: underline;
+}
+
+.changeColorButton{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.changeColorButton i{
+    font-size: 20px;
+    color: var(--fuentePrincipal);
+    transition: all 200ms;
+    cursor: pointer;
+}
+
+.changeColorButton i:hover{
+    font-size: 20px;
+    color: var(--hoverPrincipal);
+}
+
+.sectionMainPrincipal{
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.asideDesplegable{
+    display: var(--displayAside);
+    transform-origin: left;
+    background-color: var(--colorPrincipal);
+    padding-top: 10px;
+    box-shadow: var(--boxShadowSubmenu);
+    transition: all 200ms;
+}
+/*
+.navAsideDes{
+    
+}
+*/
+.ulNavAsideDes{
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 0 30px;
+}
+
+.ulNavAsideDes a{
+    color: var(--fuenteSecundaria);
+    text-decoration: none;
+    transition: all 200ms;
+    padding: 0 0 0 20px;
+}
+
+.ulNavAsideDes a:hover{
+    text-decoration: underline;
+}
+
+.ulNavAsideDes h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.divCenterMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }

@@ -4,6 +4,7 @@
 {{-- El resto de estilos se encuentran en el archivo globales --}}
 @section('cssPage')
     <link rel="stylesheet" href="/css/moduloInicio.css">
+    <link rel="stylesheet" href="/css/components.css">
 @endsection
 
 {{-- Agregar esta parte si necesitan el submenu --}}
@@ -14,252 +15,79 @@
 
 {{-- Contenido de la pagina --}}
 @section('main')
-    <main class="boxOfertas">
-        <div class="tittle"><p>Ofertas especiales</p> <a class="verMas" href="catalogo/ofertas">Ver más</a></div>
-        <div class="boxSliderOfertas">
-            <div class="boxBoxOfertas">
-                <div class="boxOfertaMain">
-                    <div class="oferta1">Oferta</div>
-                    <div class="oferta2">Oferta</div>
-                    <div class="oferta3">Oferta</div>
-                    <div class="oferta4">Oferta</div>
-                    <div class="oferta5">Oferta</div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <section class="section sugerencias">
-        <div class="tittle"><p>Busqiedas recientes</p> <a class="verMas" href="catalogo/recientes">Ver más</a></div>
-        <div class="boxProductos">
-            <div class="arrow">
-                    <i class='bx bxs-chevron-left arrowIcon'></i>
-            </div>
-            <div class="sliderProductos">
-                <div class="sliderBoxProductos">
-                    <x-card-product :img="$img">
-                        <x-slot name="producto">{{$nombre}}</x-slot>
-                        <x-slot name="tag">{{$tag}}</x-slot>
-                        <x-slot name="descuento">{{$descuento}}</x-slot>
-                        <x-slot name="precio">{{$precio}}</x-slot>
-                        {{$description}}
-                    </x-card-product>
-                    <x-card-product :img="$img">
-                        <x-slot name="producto">{{$nombre}}</x-slot>
-                        <x-slot name="tag">{{$tag}}</x-slot>
-                        <x-slot name="descuento">{{$descuento}}</x-slot>
-                        <x-slot name="precio">{{$precio}}</x-slot>
-                        {{$description}}
-                    </x-card-product>
-                    <x-card-product :img="$img">
-                        <x-slot name="producto">{{$nombre}}</x-slot>
-                        <x-slot name="tag">{{$tag}}</x-slot>
-                        <x-slot name="descuento">{{$descuento}}</x-slot>
-                        <x-slot name="precio">{{$precio}}</x-slot>
-                        {{$description}}
-                    </x-card-product>
-                    <x-card-product :img="$img">
-                        <x-slot name="producto">{{$nombre}}</x-slot>
-                        <x-slot name="tag">{{$tag}}</x-slot>
-                        <x-slot name="descuento">{{$descuento}}</x-slot>
-                        <x-slot name="precio">{{$precio}}</x-slot>
-                        {{$description}}
-                    </x-card-product>
-                    <x-card-product :img="$img">
-                        <x-slot name="producto">{{$nombre}}</x-slot>
-                        <x-slot name="tag">{{$tag}}</x-slot>
-                        <x-slot name="descuento">{{$descuento}}</x-slot>
-                        <x-slot name="precio">{{$precio}}</x-slot>
-                        {{$description}}
-                    </x-card-product>
-                </div>
-            </div>
-            <div class="arrow">
-                    <i class='bx bxs-chevron-right arrowIcon'></i>
-            </div>
-        </div>
-    </section>
-
-    <section class="section ">
-        <div class="tittle"><p>Sugerencias</p> <a class="verMas" href="catalogo/sugerencias">Ver más</a></div>
-        <div class="boxProductos">
-            <div class="arrow">
-                    <i class='bx bxs-chevron-left arrowIcon'></i>
-            </div>
-            <div class="sliderProductos">
-                <div class="sliderBoxProductos">
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem debitis quo harum dignissimos explicabo doloribus ut dolorem illo quas dolores.</p>
-                        </div>
-                    </div>
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">Descripcion breve</p>
-                        </div>
-                    </div>
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">Descripcion breve</p>
-                        </div>
-                    </div>
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">Descripcion breve</p>
-                        </div>
-                    </div>
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">Descripcion breve</p>
-                        </div>
-                    </div>
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">OUBNM</p>
-                        </div>
-                    </div>
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">Descripcion breve</p>
-                        </div>
+    @include('layouts.asideDes')
+    {{--Si utilizan el menu desplegable recomiendo utilizar este divCenterMain--}}
+    <div class="divCenterMain">
+        <main class="boxOfertas">
+            <div class="tittle"><p>Ofertas especiales</p> <a class="verMas" href="catalogo/ofertas">Ver más</a></div>
+            <div class="boxSliderOfertas">
+                <div class="boxBoxOfertas">
+                    <div class="boxOfertaMain">
+                        <div class="oferta1">Oferta</div>
+                        <div class="oferta2">Oferta</div>
+                        <div class="oferta3">Oferta</div>
+                        <div class="oferta4">Oferta</div>
+                        <div class="oferta5">Oferta</div>
                     </div>
                 </div>
             </div>
-            <div class="arrow">
-                    <i class='bx bxs-chevron-right arrowIcon'></i>
-            </div>
-        </div>
-    </section>
-
-    <section class="section ">
-        <div class="tittle"><p>Tendencias</p> <a class="verMas" href="catalogo/tendencias">Ver más</a></div>
-        <div class="boxProductos">
-            <div class="arrow">
-                    <i class='bx bxs-chevron-left arrowIcon'></i>
-            </div>
-            <div class="sliderProductos">
-                <div class="sliderBoxProductos">
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem debitis quo harum dignissimos explicabo doloribus ut dolorem illo quas dolores.</p>
-                        </div>
-                    </div>
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">Descripcion breve</p>
-                        </div>
-                    </div>
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">Descripcion breve</p>
-                        </div>
-                    </div>
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">Descripcion breve</p>
-                        </div>
-                    </div>
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">Descripcion breve</p>
-                        </div>
-                    </div>
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">OUBNM</p>
-                        </div>
-                    </div>
-                    <div class="card producto">
-                        <div class="imgProducto">
-                            <img src="/img/logo.jpeg" alt="">
-                        </div>
-                        <div class="detalles">
-                            <p class="precio">$350</p>
-                            <p class="descripcion">Descripcion breve</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="arrow">
-                    <i class='bx bxs-chevron-right arrowIcon'></i>
-            </div>
-        </div>
-    </section>
-
-    <section class="section ">
-        <div class="tittle"><p>No se</p> <a class="verMas" href="#">Ver más</a></div>
-        <div class="boxProductos">
-            <div class="arrow">
-                    <i class='bx bxs-chevron-left arrowIcon'></i>
-            </div>
-            <div class="sliderProductos">
-                <div class="sliderBoxProductos">
-                    <x-card-product :img="$img">
-                        <x-slot name="producto">{{$nombre}}</x-slot>
-                        <x-slot name="tag">{{$tag}}</x-slot>
-                        <x-slot name="descuento">{{$descuento}}</x-slot>
-                        <x-slot name="precio">{{$precio}}</x-slot>
-                        {{$description}}
-                    </x-card-product>
-                </div>
-            </div>
-            <div class="arrow">
-                    <i class='bx bxs-chevron-right arrowIcon'></i>
-            </div>
-        </div>
-    </section>
+        </main>
+    
+    @foreach ($sectionS as $nameS => $data)
+        {{-- x-slider-product es como se llama al componente del slider, solo hay que pasar 3 parametros, 
+            nombre de la seccion que se pone como $nameS, la url para ver mas hacer de esa seccion que se declara con $urlS
+            y el contenido que se pone sin más dentro de la etiqueta--}}
+        <x-slider-product>
+    
+            {{--Esta son las unicas variables que se deben enviar--}}
+            <x-slot name="nameSectionSlider">{{$nameS}}</x-slot>
+            <x-slot name="urlSectionSlider">{{$data['url']}}</x-slot>
+            {{--Aqui termian las variables del slider lo demás es contenido--}}
+            <x-card-product :img="$products['product']['img']">
+                <x-slot name="producto">{{$products['product']['name']}}</x-slot>
+                <x-slot name="tag">{{$products['product']['tag']}}</x-slot>
+                <x-slot name="descuento">{{$products['product']['descuento']}}</x-slot>
+                <x-slot name="precio">{{$products['product']['precio']}}</x-slot>
+                {{$products['product']['description']}}
+            </x-card-product>
+            <x-card-product :img="$products['product']['img']">
+                <x-slot name="producto">{{$products['product']['name']}}</x-slot>
+                <x-slot name="tag">{{$products['product']['tag']}}</x-slot>
+                <x-slot name="descuento">{{$products['product']['descuento']}}</x-slot>
+                <x-slot name="precio">{{$products['product']['precio']}}</x-slot>
+                {{$products['product']['description']}}
+            </x-card-product>
+            <x-card-product :img="$products['product']['img']">
+                <x-slot name="producto">{{$products['product']['name']}}</x-slot>
+                <x-slot name="tag">{{$products['product']['tag']}}</x-slot>
+                <x-slot name="descuento">{{$products['product']['descuento']}}</x-slot>
+                <x-slot name="precio">{{$products['product']['precio']}}</x-slot>
+                {{$products['product']['description']}}
+            </x-card-product>
+            <x-card-product :img="$products['product']['img']">
+                <x-slot name="producto">{{$products['product']['name']}}</x-slot>
+                <x-slot name="tag">{{$products['product']['tag']}}</x-slot>
+                <x-slot name="descuento">{{$products['product']['descuento']}}</x-slot>
+                <x-slot name="precio">{{$products['product']['precio']}}</x-slot>
+                {{$products['product']['description']}}
+            </x-card-product>
+            <x-card-product :img="$products['product']['img']">
+                <x-slot name="producto">{{$products['product']['name']}}</x-slot>
+                <x-slot name="tag">{{$products['product']['tag']}}</x-slot>
+                <x-slot name="descuento">{{$products['product']['descuento']}}</x-slot>
+                <x-slot name="precio">{{$products['product']['precio']}}</x-slot>
+                {{$products['product']['description']}}
+            </x-card-product>
+            <x-card-product :img="$products['product']['img']">
+                <x-slot name="producto">{{$products['product']['name']}}</x-slot>
+                <x-slot name="tag">{{$products['product']['tag']}}</x-slot>
+                <x-slot name="descuento">{{$products['product']['descuento']}}</x-slot>
+                <x-slot name="precio">{{$products['product']['precio']}}</x-slot>
+                {{$products['product']['description']}}
+            </x-card-product>
+        </x-slider-product>
+    @endforeach 
+    </div> 
 
     <footer>
         
@@ -268,5 +96,6 @@
 
 {{-- Agregar los js de su modulo --}}
 @section('jsPage')
-    <script src=""></script>
+    <script src="/js/moduloInicio.js"></script>
+    <script src="/js/components.js"></script>
 @endsection

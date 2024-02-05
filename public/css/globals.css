@@ -70,12 +70,18 @@
 
     /* Utilicen estas variables de abajo para los colores de su interfaz */
 
-    --fuentePrincipal: #fff;
-    --fuenteSecundaria: ;
+    --fuentePrincipal: #ffffff;
+    --fuenteSecundaria: #ffffff;
     --colorPrincipal: #474747;
     --colorFondo: #343532;
     --colorHeader: #262626;
     --hoverPrincipal: #d99923;
+    --hoverSecundario: #343532;
+    --hoverTerciario: #474747;
+    --boxShadowSubmenu: 0 0 0 transparent;
+    --verde: #24c32e;
+    /* Utilicen el borderCard en las secciones que quieran delimitar, solo se mostrara cuando el tema cambie a claro */
+    --borderCard: 1px solid transparent;
   }
 
 html{
@@ -95,7 +101,7 @@ html{
 
 body{
     background-color: var(--colorFondo);
-    color: var(--fuentePrincipal);
+    color: var(--fuenteSecundaria);
 }
 
 ul{
@@ -111,3 +117,25 @@ img{
     max-width: 100%;
     display: block;
 }*/
+
+/*verMas*/
+
+.verMas{
+    color: var(--fuenteSecundaria);
+    text-decoration: none;
+    border: 1px solid var(--fuenteSecundaria);
+    border-radius: 5px;
+    padding: 0px 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    transition: all 200ms;
+}
+
+.verMas:hover{
+    background-color: var(--hoverPrincipal);
+    color: var(--fuentePrincipal);
+    border-color: var(--hoverPrincipal);
+}

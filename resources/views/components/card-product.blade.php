@@ -1,4 +1,4 @@
-<div class="card producto">
+<a href="#" class="card producto">
     <div class="imgProducto">
         <img src="{{$img}}" alt="{{$producto}}">
     </div>
@@ -8,7 +8,6 @@
                 <p>{{$tag}}</p>
             </div>
             <div class="iconOption">
-                <i class='bx bx-cart-add iconoCard' ></i>
                 <i class='bx bx-heart iconoCard'></i>
             </div>
         </div>
@@ -23,4 +22,4 @@
         </div>
         <p class="descripcion">{{$slot}}</p>
     </div>
-</div>
+</a>

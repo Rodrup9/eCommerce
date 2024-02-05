@@ -20,13 +20,16 @@
                     
                 </i>
                 <div class="boxBuscador">
-                    <div class="lupa">
+                    <button id="buscarLupa" type="button" class="lupa">
                         <i class='bx bx-search'></i>
-                    </div>
+                    </button>
                     <input type="search" name="" class="buscador" id="" placeholder="Buscar">
                 </div>
             </div>
             <div class="menuLeft">
+                <button id="changeColorButton" class="changeColorButton" type="button" value="oscuro" onclick="changeColor()">
+                    <i class='bx bx-sun'></i>
+                </button>
                 @if ($nameView != "Home")
                     <a href="../home" class="opcionPrincipal">Home</a>
                 @endif
@@ -38,12 +41,16 @@
             {{-- El subMenu se agrega por separado, para las vistas que lo requieran, incluirlo desde la vista --}}
         @show
     </header>
+    <section class="sectionMainPrincipal">
+        @section('main')
 
-    @section('main')
-        {{-- Contenido de la pagina --}}
-    @show
-
+            {{-- Contenido de la pagina --}}
+        @show
+    </section>
     @yield('jsPage')
+
+    <script src="/js/globals.js"></script>
+    <script src="/js/headers.js"></script>
     
 </body>
 </html>
