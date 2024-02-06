@@ -21,12 +21,9 @@ Route::get('/', function () {
 });*/
 
 
-Route::prefix('ecommerce')->group(function(){
-    Route::controller(HomeController::class)->group(function(){
-        Route::get('/home', 'index');
-    });
-    Route::controller(CatalogoController::class)->group(function(){
-        Route::get('/catalogo/{filter?}', 'index');
-    });
-    //Agreguen aqui otos grupos para sus modulo--------------Esa es mi idea----
+Route::controller(HomeController::class)->group(function(){
+    Route::get('/home', 'index');
+});
+Route::controller(CatalogoController::class)->group(function(){
+    Route::get('/catalogo/{filter?}', 'index');
 });
