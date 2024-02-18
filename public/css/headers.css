@@ -161,6 +161,16 @@
     box-shadow: var(--boxShadowSubmenu);
     transition: all 200ms;
 }
+
+.filtros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtros i:hover{
+    color: var(--hoverPrincipal);
+}
 /*
 .navAsideDes{
     
