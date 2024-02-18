@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AgregarProductoController;
 use App\Http\Controllers\CatalogoController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -26,4 +27,8 @@ Route::controller(HomeController::class)->group(function(){
 });
 Route::controller(CatalogoController::class)->group(function(){
     Route::get('/catalogo/{filter?}', 'index');
+});
+
+Route::controller(AgregarProductoController::class)->group(function(){
+    Route::get("/vendedor/producto","NuevoProducto")->name("vendedor.producto");
 });

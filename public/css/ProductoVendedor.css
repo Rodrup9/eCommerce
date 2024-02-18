@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, 'IBM Plex Sans', sans-serif;
+}
+
+
+.contenido_producto{
+    display:grid;
+    grid-template-columns: repeat(3,33.3%);
+    background-color: #474747;
+}
+
+
+.datos_producto,.info_principal,.info_entrega{
+    display: flex;
+    flex-direction: column;
+}
+
+.datos_producto{
+    padding: 20px 25px;
+}
+
+
+.info_tipos_entrega,.vinculo_direccion,.agregar_direccion{
+    
+    display: flex;
+    flex-direction: row;
+}
+.info_entrega{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.info_tipos_entrega input{
+    width: 60px;
+    height: 50px;
+    
+}
+.info_tipos_entrega{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.vinculo_direccion{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.vinculo_direccion input{
+    width: 60px;
+    height: 50px;
+    
+}
+
+
+.agregar_direccion{
+    display: flex;
+    flex-direction: column;
+}
+
+.btns_acciones{
+    display: flex;
+    flex-direction: row;
+    
+}
+.btnregresar{
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.aggProduc{
+    background-color: #D99923;
+    color: #FFFFFF;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 260px;
+    height: 61px;
+    border: none;
+}
+.opc_avanzada,.imgs-agg{
+    display: flex;
+    flex-direction: column;
+}
+
+/* .imgs-agg{} */
+
+
+.img_producto{
+    
+    display: flex;
+    flex-direction: column;
+    background-color: #323233;
+}
+.img-principal{
+    width: 200px;
+    height: 200px;
+}
+
+.labFomr, .subtitle{
+    color:#FFFFFF;
+}
+
+.subtitle{
+    font-size: 44px;
+}
+.labFomr{
+    font-size: 20px;
+}
+p{
+    color: #FFFFFF;
+}
+
+.inlargo{
+    height: 40px;
+    border-radius: 11px;
+    background-color:#474747;
+    border: 1px solid #FFFFFF;
+    margin: 10px 0px;
+}
+.inlargo,.incorto:focus{
+    outline-color: #FFFFFF;
+}
+.incorto{
+    width: 180px;
+    height: 40px;
+    border-radius: 11px;
+    background-color: #474747;
+    border: 1px solid #FFFFFF;
+    margin: 10px 0px;
+}
