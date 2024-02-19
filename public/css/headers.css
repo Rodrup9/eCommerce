@@ -28,20 +28,20 @@
 }
 
 .menuPrincipal a, .menuPrincipal{
-    color: var(--fuentePrincipal);
+    color: var(--fuenteHeader);
     text-decoration: none;
     transition: all 200ms;
 }
 
 .menuSecundario a, .menuSecundario{
-    color: var(--fuenteSecundaria);
+    color: var(--fuenteSubHeader);
     text-decoration: none;
     transition: all 200ms;
 }
 
 .menuSecundario{
     display: flex;  
-    background-color: var(--colorPrincipal);
+    background-color: var(--colorSubHeader);
     box-shadow: var(--boxShadowSubmenu);
     padding: 10px 20px;
     box-sizing: border-box;
@@ -63,7 +63,7 @@
 
 .menuHamburger i:hover{
     transform: scale(1.08);
-    color: var(--hoverPrincipal);
+    color: var(--hoverHeader);
 }
 
 .listaOption{
@@ -81,24 +81,24 @@
 .lupa{
     width: 30px;
     min-height: 100%;
-    border: 1px solid var(--fuentePrincipal);
+    border: 1px solid var(--fuenteHeader);
     background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px 0px 0px 5px;
     transition: all 200ms;
-    color: var(--fuentePrincipal);
+    color: var(--fuenteHeader);
     cursor: pointer;
 }
 
 .buscador{
     background-color: transparent;
-    border: 1px solid var(--fuentePrincipal);
+    border: 1px solid var(--fuenteHeader);
     border-radius: 0 5px 5px 0;
     width: 450px;
     padding: 0 5px 0 15px;
-    color: var(--fuentePrincipal);
+    color: var(--fuenteHeader);
     transition: all 200ms;
 }
 
@@ -116,7 +116,7 @@
 }
 
 .opcionPrincipal:hover{
-    color: var(--hoverPrincipal);
+    color: var(--hoverHeader);
 }
 
 .opcionSecundaria{
@@ -137,14 +137,14 @@
 
 .changeColorButton i{
     font-size: 20px;
-    color: var(--fuentePrincipal);
+    color: var(--fuenteHeader);
     transition: all 200ms;
     cursor: pointer;
 }
 
 .changeColorButton i:hover{
     font-size: 20px;
-    color: var(--hoverPrincipal);
+    color: var(--hoverHeader);
 }
 
 .sectionMainPrincipal{
@@ -156,10 +156,20 @@
 .asideDesplegable{
     display: var(--displayAside);
     transform-origin: left;
-    background-color: var(--colorPrincipal);
+    background-color: var(--colorSubHeader);
     padding-top: 10px;
     box-shadow: var(--boxShadowSubmenu);
     transition: all 200ms;
+}
+
+.filtros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtros i:hover{
+    color: var(--hoverElements);
 }
 /*
 .navAsideDes{
@@ -173,7 +183,7 @@
 }
 
 .ulNavAsideDes a{
-    color: var(--fuenteSecundaria);
+    color: var(--fuenteSubHeader);
     text-decoration: none;
     transition: all 200ms;
     padding: 0 0 0 20px;

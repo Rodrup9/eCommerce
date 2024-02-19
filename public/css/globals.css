@@ -69,6 +69,29 @@
 
 
     /* Utilicen estas variables de abajo para los colores de su interfaz */
+    --colorHeader: #262626;
+    --colorSubHeader: #474747;
+    --colorElements: #474747;
+    --colorFondo: #343532;
+
+    --fuenteHeader: #ffffff;
+    --fuenteSubHeader: #ffffff;
+    --fuenteElements: #ffffff;
+
+    --hoverHeader: #d99923;
+    --hoverSubHeader: ;
+    --hoverElements: #d99923;
+    --hoverIconFondo: #383936;
+
+    --boxShadowSubmenu: 0 0 0 transparent;
+
+    --btnConfirm: #d99923;
+    --btnCancel: ;
+    --btnDelete: ;
+    --btnNext: ;
+
+
+
 
     --fuentePrincipal: #ffffff;
     --fuenteSecundaria: #ffffff;
@@ -80,6 +103,7 @@
     --hoverTerciario: #474747;
     --boxShadowSubmenu: 0 0 0 transparent;
     --verde: #24c32e;
+
     /* Utilicen el borderCard en las secciones que quieran delimitar, solo se mostrara cuando el tema cambie a claro */
     --borderCard: 1px solid transparent;
   }
@@ -101,7 +125,7 @@ html{
 
 body{
     background-color: var(--colorFondo);
-    color: var(--fuenteSecundaria);
+    color: var(--fuenteElements);
 }
 
 ul{
@@ -121,9 +145,9 @@ img{
 /*verMas*/
 
 .verMas{
-    color: var(--fuenteSecundaria);
+    color: var(--fuenteElements);
     text-decoration: none;
-    border: 1px solid var(--fuenteSecundaria);
+    border: 1px solid var(--fuenteElements);
     border-radius: 5px;
     padding: 0px 10px;
     font-size: 14px;
@@ -135,7 +159,50 @@ img{
 }
 
 .verMas:hover{
-    background-color: var(--hoverPrincipal);
-    color: var(--fuentePrincipal);
-    border-color: var(--hoverPrincipal);
+    background-color: var(--hoverElements);
+    color: #ffffff;
+    border-color: var(--hoverElements);
+}
+
+.bxMy{
+    font-size: 28px;
+    border-radius: 50%;
+    color: var(--fuenteElements);
+    transition: color 200ms;
+}
+
+/*---------------- Buttons -------------------------------*/
+.btnDefinite{
+    padding: 1px 0px;
+    text-align: center;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.btnText{
+    padding: 1px 15px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.btnIcon{
+    display: none;
+}
+
+.btnConfirm{
+    background-color: var(--btnConfirm);
+    color: var(--fuenteElements);
+}
+
+.btnCancel{
+    background-color: var(--btnCancel);
+}
+
+.btnDelete{
+    background-color: var(--btnDelete);
+}
+
+.btnNext{
+    background-color: var(--btnNext);
 }

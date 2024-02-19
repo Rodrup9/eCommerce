@@ -13,9 +13,6 @@
             <a href="#" class="opcionSecundaria">Electrodomesticos</a>
             <a href="#" class="opcionSecundaria">Video Juegos</a>
             <a href="#" class="opcionSecundaria">Ropa</a>
-            @if ($nameView == "Directorio")
-                <div class="filtros"></div>
-            @endif
         {{-- ejemplo
         @elseif ($nameView == "Prueba")
             <a href="#" class="opcionSecundaria">Ropa</a>
@@ -24,4 +21,10 @@
             <p>Parece haber un problema: sin opciones</p>
         @endif
     </div>
+    @if ($nameView == "Catalogo")
+        <div class="filtros">
+            <i class='bx bx-filter bxMy' ></i>
+            
+        </div>
+    @endif
 </nav>
