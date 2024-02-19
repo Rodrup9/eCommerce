@@ -86,9 +86,13 @@
     --boxShadowSubmenu: 0 0 0 transparent;
 
     --btnConfirm: #d99923;
-    --btnCancel: ;
+    --btnCancel: #343532;
     --btnDelete: ;
     --btnNext: ;
+    --btnNeutro: #343532;
+
+    --hoverBtn: #ffffff;
+    --hoverBackBtn: #292929;
 
     /* Utilicen el borderCard en las secciones que quieran delimitar, solo se mostrara cuando el tema cambie a claro */
     --borderCard: 1px solid transparent;
@@ -106,7 +110,7 @@ html{
     font-size: 16px;
     line-height: 1.8;
     font-family: Poppins, 'IBM Plex Sans', sans-serif;
-    font-weight: 400;   
+    font-weight: 400;
 }
 
 body{
@@ -122,6 +126,7 @@ ul{
 li{
     list-style: none;
 }
+
 /*
 img{
     max-width: 100%;
@@ -151,7 +156,7 @@ img{
 }
 
 .bxMy{
-    font-size: 28px;
+    font-size: 24px;
     border-radius: 50%;
     color: var(--fuenteElements);
     transition: color 200ms;
@@ -167,9 +172,10 @@ img{
 }
 
 .btnText{
-    padding: 1px 15px;
-    border-radius: 10px;
+    padding: 3px 15px;
+    border-radius: 5px;
     border: 1px solid transparent;
+    transition: 200ms;
 }
 
 .btnIcon{
@@ -178,11 +184,12 @@ img{
 
 .btnConfirm{
     background-color: var(--btnConfirm);
-    color: var(--fuenteElements);
+    color: var(--white-50);
 }
 
 .btnCancel{
     background-color: var(--btnCancel);
+    color: var(--white-50);
 }
 
 .btnDelete{
@@ -191,4 +198,14 @@ img{
 
 .btnNext{
     background-color: var(--btnNext);
+}
+
+.btnNeutro{
+    background-color: var(--btnNeutro);
+    color: var(--white-50);
+}
+
+.btnText:hover{
+    background-color: var(--hoverBackBtn);
+    color: var(--hoverBtn);
 }

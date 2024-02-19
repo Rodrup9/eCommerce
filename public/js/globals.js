@@ -20,7 +20,7 @@ const colorThemes = {
         colorHeader: '#d99923',
         colorSubHeader: '#ffffff',
         colorElements: '#ffffff',
-        colorFondo:' #ffffff',
+        colorFondo:' #e7e7e7',
         fuenteHeader: '#ffffff',
         fuenteSubHeader: '#0000000',
         fuenteElements:' #0000000',

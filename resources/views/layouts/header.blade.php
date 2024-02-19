@@ -10,7 +10,7 @@
     @yield('cssPage')
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     {{-- El nombre la pagina es pasado por la ruta desde el controlador --}}
-    <title>{{$nameView}}</title>
+    <title>Ecommerce | {{$nameView}}</title>
 </head>
 <body>
     <header class="menuGeneral">
@@ -30,8 +30,13 @@
                 <button id="changeColorButton" class="changeColorButton" type="button" value="oscuro" onclick="changeColor()">
                     <i class='bx bx-sun'></i>
                 </button>
+                @if ($nameView != 'shoppingCart')
+                    <a href="/shoppingCart" class="changeColorButton">
+                        <i class='bx bx-cart'></i>
+                    </a>
+                @endif
                 @if ($nameView != "Home")
-                    <a href="../home" class="opcionPrincipal">Home</a>
+                    <a href="/home" class="opcionPrincipal">Home</a>
                 @endif
                 <a href="#" class="opcionPrincipal">Iniciar sesión</a>
                 <a href="#" class="opcionPrincipal">Registrarse</a>

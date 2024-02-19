@@ -3,6 +3,7 @@
 use App\Http\Controllers\CatalogoController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ShoppingCartController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,11 @@ Route::get('/', function () {
 Route::controller(HomeController::class)->group(function(){
     Route::get('/home', 'index');
 });
+
 Route::controller(CatalogoController::class)->group(function(){
     Route::get('/catalogo/{filter?}', 'index');
+});
+
+Route::controller(ShoppingCartController::class)->group(function(){
+    Route::get('/shoppingCart', 'index');
 });
