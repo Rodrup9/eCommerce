@@ -10,8 +10,8 @@
 /* Tarjeta de producto------------------------------------------------------------------------------------------------------- */
 
 .card{
-    background-color: var(--colorPrincipal);
-    color: var(--colorSecundario);
+    background-color: var(--colorElements);
+    color: var(--fuenteElements);
     min-width: 288px;
     max-width: 288px;
     /*max-height: 500px;*/
@@ -70,7 +70,7 @@
 }
 
 .iconoCard:hover{
-    background-color: var(--hoverSecundario);
+    background-color: var(--hoverIconFondo);
 }
 
 .tag{
@@ -149,8 +149,14 @@
     opacity: var(--opacitySlider);
 }
 
-.arrow:hover{
-    background-color: var(--hoverTerciario);
+.arrow i{
+    transition: all 200ms;
+    transform: scale(1.5);
+}
+
+.arrow i:hover{
+    color: var(--hoverElements);
+    transform: scale(2);
 }
 
 .arrowIcon{

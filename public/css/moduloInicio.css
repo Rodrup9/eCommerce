@@ -44,7 +44,7 @@
 }
 
 .oferta1, .oferta2, .oferta3, .oferta4, .oferta5{
-    background-color: var(--colorPrincipal);
+    background-color: var(--colorElements);
     display: flex;
     justify-content: center;
     align-items: center;
