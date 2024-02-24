@@ -28,6 +28,7 @@
                     <ul>
                         <li><a href="#">Iniciar sesión</a></li>
                         <li><a href="#">Registrarse</a></li>
+                        <li><a href="#">Carrito de Compras</a></li>
                     </ul>
                 </li>
             @endif

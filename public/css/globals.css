@@ -69,17 +69,31 @@
 
 
     /* Utilicen estas variables de abajo para los colores de su interfaz */
-
-    --fuentePrincipal: #ffffff;
-    --fuenteSecundaria: #ffffff;
-    --colorPrincipal: #474747;
-    --colorFondo: #343532;
     --colorHeader: #262626;
-    --hoverPrincipal: #d99923;
-    --hoverSecundario: #343532;
-    --hoverTerciario: #474747;
+    --colorSubHeader: #474747;
+    --colorElements: #474747;
+    --colorFondo: #343532;
+
+    --fuenteHeader: #ffffff;
+    --fuenteSubHeader: #ffffff;
+    --fuenteElements: #ffffff;
+
+    --hoverHeader: #d99923;
+    --hoverSubHeader: ;
+    --hoverElements: #d99923;
+    --hoverIconFondo: #383936;
+
     --boxShadowSubmenu: 0 0 0 transparent;
-    --verde: #24c32e;
+
+    --btnConfirm: #d99923;
+    --btnCancel: #343532;
+    --btnDelete: ;
+    --btnNext: ;
+    --btnNeutro: #343532;
+
+    --hoverBtn: #ffffff;
+    --hoverBackBtn: #292929;
+
     /* Utilicen el borderCard en las secciones que quieran delimitar, solo se mostrara cuando el tema cambie a claro */
     --borderCard: 1px solid transparent;
   }
@@ -96,12 +110,12 @@ html{
     font-size: 16px;
     line-height: 1.8;
     font-family: Poppins, 'IBM Plex Sans', sans-serif;
-    font-weight: 400;   
+    font-weight: 400;
 }
 
 body{
     background-color: var(--colorFondo);
-    color: var(--fuenteSecundaria);
+    color: var(--fuenteElements);
 }
 
 ul{
@@ -112,6 +126,7 @@ ul{
 li{
     list-style: none;
 }
+
 /*
 img{
     max-width: 100%;
@@ -121,9 +136,9 @@ img{
 /*verMas*/
 
 .verMas{
-    color: var(--fuenteSecundaria);
+    color: var(--fuenteElements);
     text-decoration: none;
-    border: 1px solid var(--fuenteSecundaria);
+    border: 1px solid var(--fuenteElements);
     border-radius: 5px;
     padding: 0px 10px;
     font-size: 14px;
@@ -135,7 +150,62 @@ img{
 }
 
 .verMas:hover{
-    background-color: var(--hoverPrincipal);
-    color: var(--fuentePrincipal);
-    border-color: var(--hoverPrincipal);
+    background-color: var(--hoverElements);
+    color: #ffffff;
+    border-color: var(--hoverElements);
+}
+
+.bxMy{
+    font-size: 24px;
+    border-radius: 50%;
+    color: var(--fuenteElements);
+    transition: color 200ms;
+}
+
+/*---------------- Buttons -------------------------------*/
+.btnDefinite{
+    padding: 1px 0px;
+    text-align: center;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.btnText{
+    padding: 3px 15px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: 200ms;
+}
+
+.btnIcon{
+    display: none;
+}
+
+.btnConfirm{
+    background-color: var(--btnConfirm);
+    color: var(--white-50);
+}
+
+.btnCancel{
+    background-color: var(--btnCancel);
+    color: var(--white-50);
+}
+
+.btnDelete{
+    background-color: var(--btnDelete);
+}
+
+.btnNext{
+    background-color: var(--btnNext);
+}
+
+.btnNeutro{
+    background-color: var(--btnNeutro);
+    color: var(--white-50);
+}
+
+.btnText:hover{
+    background-color: var(--hoverBackBtn);
+    color: var(--hoverBtn);
 }
