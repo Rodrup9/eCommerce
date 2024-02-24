@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.lista-pedidos{
+    width: 1450px;
+    display: flex;
+    flex-direction: column;
+    background-color: #474747;
+    
+
+}
+
+.pedido{
+    display: flex;
+    flex-direction: row;
+    background-color: #5e5e5e;
+    margin: 5px 10px;
+    padding: 10px 10px;
+    border-radius: 7px;
+    color: #FFFFFF;
+}
+
+.pedido p,span{
+    padding: 0px 7.7%;
+}
+
