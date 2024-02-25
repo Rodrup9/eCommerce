@@ -39,6 +39,8 @@ Route::controller(AgregarProductoController::class)->group(function(){
 
 Route::controller(VendedorController::class)->group(function(){
     Route::get("/vendedor/pedidos","index")->name("vendedor.pedidos");
+    Route::get("/vendedor/pedidos/detalles","detalles")->name("vendedor.pedidos.detalles");
+
 });
 
 Route::controller(ShoppingCartController::class)->group(function(){

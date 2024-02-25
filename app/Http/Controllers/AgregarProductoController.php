@@ -8,7 +8,7 @@ use Illuminate\View\View;
 class AgregarProductoController extends Controller{
 
     public function NuevoProducto(): View{
-        return view("moduloVendedores.agregarProduc");
+        return view("moduloVendedores.agregarProduc",["nameView"=> "agregarProducto"]);
     }
     
 }

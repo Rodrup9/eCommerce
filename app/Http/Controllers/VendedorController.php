@@ -10,4 +10,8 @@ class VendedorController extends Controller
     public function index(): View{
         return view("moduloVendedores.listaPedido",['nameView' => 'Home']);
     }
+
+    public function detalles(){
+        return view("moduloVendedores.detallesPedido",['nameView' => 'detalles']);
+    }
 }

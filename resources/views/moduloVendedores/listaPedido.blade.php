@@ -14,7 +14,7 @@
 @section('main')
 <main class="lista-pedidos">
     <div class="pedido">
-        <p class="">Nombre</p>
+        <a href="{{route("vendedor.pedidos.detalles")}}">Nombre</a>
         <p class="">Producto</p>
         <p class="">Descripción</p>
         <p class="">Fecha</p>
@@ -22,7 +22,7 @@
     </div>
 
     <div class="pedido">
-        <p class="">Nombre</p>
+        <a href="">Nombre</a>
         <p class="">Producto</p>
         <p class="">Descripción</p>
         <p class="">Fecha</p>
@@ -30,7 +30,7 @@
     </div>
 
     <div class="pedido">
-        <p class="">Nombre</p>
+        <a href="">Nombre</a>
         <p class="">Producto</p>
         <p class="">Descripción</p>
         <p class="">Fecha</p>
@@ -38,7 +38,7 @@
     </div>
 
     <div class="pedido">
-        <p class="">Nombre</p>
+        <a href="">Nombre</a>
         <p class="">Producto</p>
         <p class="">Descripción</p>
         <p class="">Fecha</p>
@@ -46,56 +46,56 @@
     </div>
 
     <div class="pedido">
-        <p>Nombre</p>
+        <a href="">Nombre</a>
         <p>Producto</p>
         <p>Descripción</p>
         <p>Fecha</p>
         <span class="material-symbols-outlined">timer</span>
     </div>
     <div class="pedido">
-        <p>Nombre</p>
+        <a href="">Nombre</a>
         <p>Producto</p>
         <p>Descripción</p>
         <p>Fecha</p>
         <span class="material-symbols-outlined">timer</span>
     </div>
     <div class="pedido">
-        <p>Nombre</p>
+        <a href="">Nombre</a>
         <p>Producto</p>
         <p>Descripción</p>
         <p>Fecha</p>
         <span class="material-symbols-outlined">timer</span>
     </div>
     <div class="pedido">
-        <p>Nombre</p>
+        <a href="">Nombre</a>
         <p>Producto</p>
         <p>Descripción</p>
         <p>Fecha</p>
         <span class="material-symbols-outlined">timer</span>
     </div>
     <div class="pedido">
-        <p>Nombre</p>
+        <a href="">Nombre</a>
         <p>Producto</p>
         <p>Descripción</p>
         <p>Fecha</p>
         <span class="material-symbols-outlined">timer</span>
     </div>
     <div class="pedido">
-        <p>Nombre</p>
+        <a href="">Nombre</a>
         <p>Producto</p>
         <p>Descripción</p>
         <p>Fecha</p>
         <span class="material-symbols-outlined">timer</span>
     </div>
     <div class="pedido">
-        <p>Nombre</p>
+        <a href="">Nombre</a>
         <p>Producto</p>
         <p>Descripción</p>
         <p>Fecha</p>
         <span class="material-symbols-outlined">timer</span>
     </div>
     <div class="pedido">
-        <p>Nombre</p>
+        <a href="">Nombre</a>
         <p>Producto</p>
         <p>Descripción</p>
         <p>Fecha</p>

@@ -1,10 +1,10 @@
-@extends('layouts.headerVendedor')
+@extends('layouts.header')
 
-@section("css")
+@section("cssPage")
     <link rel="stylesheet" href="/css/ProductoVendedor.css">
 @endsection
 
-@section('content')
+@section('main')
     <section class="contenido_producto">
         <form action="" method="post" >
             <div class="datos_producto">
@@ -70,7 +70,7 @@
                 
 
                 <div class="btns_acciones">
-                    <a class="btnregresar" href="#">Regresar</a>
+                    <a class="btnregresar" href="{{route("vendedor.pedidos")}}">Regresar</a>
                     <button class="aggProduc" type="submit">Agregar Producto</button>
                 </div>
             </div>
