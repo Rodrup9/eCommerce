@@ -7,7 +7,8 @@
 @section('main')
     <main class="mainShoppingCart">
         @if ($user != null and $cart != null)
-            <form class="sectionShoppingCart">
+            <form method="get" action="{{route('confirmData')}}" class="sectionShoppingCart">
+                @csrf  
                 <div class="headerMain">
                     <h1>Tú carrito de compras</h1>
                 </div>
@@ -79,10 +80,10 @@
                 </section>
                 <p class="fraseFooter">Selecciona los productos que desees comprar</p>
                 <div class="buttonCart">
-                    <button class="btnText btnCancel">Cancelar</button>
-                    <button class="btnText btnConfirm">Pagar</button>
+                    <a href="{{$urlPage}}"" class="btnText btnCancel">Cancelar</a>
+                    <button type="submit" class="btnText btnConfirm">Pagar</button>
                 </div>
-                <a href="{{$urlPage}}" class="buttonRegresar">{{$urlPage}}</a>
+                {{-- <a " class="buttonRegresar">{{$urlPage}}</a> --}}
             </form>
             
         @elseif ($user != null)
@@ -101,7 +102,9 @@
                 </div>
             </div>
         @endif
-        <div></div>
+        <div>
+            
+        </div>
     </main>
 
 @endsection

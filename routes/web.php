@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminEcommerceController;
 use App\Http\Controllers\CatalogoController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -23,13 +24,23 @@ Route::get('/', function () {
 
 
 Route::controller(HomeController::class)->group(function(){
-    Route::get('/home', 'index');
+    Route::get('/home', 'index')->name('home');
+    Route::get('/', 'index')->name('home');
 });
 
 Route::controller(CatalogoController::class)->group(function(){
-    Route::get('/catalogo/{filter?}', 'index');
+    Route::get('/catalogo/{filter?}', 'index')->name('catalogo');
 });
 
 Route::controller(ShoppingCartController::class)->group(function(){
-    Route::get('/shoppingCart', 'index');
+    Route::get('/shoppingCart', 'index')->name('homeShoppingCart');
+    Route::get('/shoppingCart/confirmar', 'confirmData')->name('confirmData');
+    Route::get('/shoppingCart/Historial', 'historialShopping')->name('historialShopping');
 });
+
+Route::controller(AdminEcommerceController::class)->group(function(){
+    Route::get('/adminEcommerce', 'index')->name('homeAdminEcommerce');
+    Route::get('/adminListaEcommerce/{lista?}', 'lista')->name('adminListaEcommerce');
+    Route::get('/adminListaEcommerce/{lista?}/{data?}', 'detalles')->name('adminListDetalles');
+});
+
