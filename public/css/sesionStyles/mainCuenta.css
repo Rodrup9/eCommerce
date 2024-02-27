@@ -1,0 +1,29 @@
+.container-center {
+    width: 40%;
+    min-height: 100vh;
+    max-height: 100%;
+    margin: 0 auto;
+    background-color: var(--formularioBox);
+    padding: 20px 50px 0 50px;
+}
+
+fieldset {
+    border: none;
+}
+
+.changePage {
+    position: absolute;
+    left: 5vh;
+    bottom: 5vh;
+}
+
+.submit {
+    display: block;
+    width: 220px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 30px auto;
+    background-color: var(--hoverHeader);
+    border: 0;
+    color: var(--fuenteHeader);
+}

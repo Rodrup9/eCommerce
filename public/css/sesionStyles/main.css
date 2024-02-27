@@ -1,0 +1,39 @@
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--colorFondo);
+}
+
+.btn-flotante {
+    color: var(--hoverHeader);
+	border-radius: 10px;
+	background-color: var(--colorElements);
+	padding: 10px 15px;
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	transition: all 300ms ease 0ms;
+    cursor: pointer;
+}
+
+.btn-flotante:hover {
+	background-color: var(--colorFondo); /* Color de fondo al pasar el cursor */
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+	transform: translateY(-7px);
+}
+
+input {
+    background-color: var(--formularioBox);
+    border-radius: 10px;
+    border: 2px groove var(--fuenteHeader);
+    width: 100%;
+    height: 50px;
+    color: var(--formularioInput);
+    padding: 5px 10px;
+}
+
+input:focus {
+    outline: none;
+    margin: 0;
+    color: var(--fuenteHeader);
+}

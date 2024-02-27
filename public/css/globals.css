@@ -96,6 +96,11 @@
 
     /* Utilicen el borderCard en las secciones que quieran delimitar, solo se mostrara cuando el tema cambie a claro */
     --borderCard: 1px solid transparent;
+
+    /* Variables utilizadas para la vista de la sesiones */
+    --formularioBox: #474747;
+    --formularioBoxShadow: #D9992340;
+    --formularioInput: #ffffffbd;
   }
 
 html{
