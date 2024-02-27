@@ -24,7 +24,7 @@ Route::get('/', function () {
 
 //Rutas para el manejo de las sesiones
 Route::controller(SesionController::class)->group(function() {
-    Route::get('/', 'index')->name('login');
+    Route::get('login', 'index')->name('login');
     Route::post('iniciar', 'login')->name('signin');
     Route::get('register', 'register')->name('register');
     Route::post('registro', 'check')->name('confirmar');

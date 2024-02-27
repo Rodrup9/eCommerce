@@ -5,33 +5,30 @@
     max-height: 100%;
     margin: 0;
     box-shadow: 60px -5px 150px -22px var(--formularioBoxShadow);
-    position: relative;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
 }
 
-form {
-	width: 50%;
-	padding: 60px 50px 0 50px;
+.container-center {
+    margin: auto;
+    width: 50%;
+    max-width: 50%;
+    padding: 0 40px;
 }
 
 h1 {
+    padding: 30px 0 20px 0;
     text-align: center;
-    font-size:50px;
+    font-size: 35px;
     color: var(--fuenteHeader);
 }
 
 fieldset {
     border: none;
     margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    font-size: 20px;
-    margin-left: 30px;
-    color: var(--fuenteHeader);
 }
 
 .submit {
@@ -65,18 +62,12 @@ label {
 
 .round {
     border-radius: 100%;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     background-color: var(--fuenteHeader);
 }
 
-p, a {
-    color: var(--fuenteHeader);
-    text-align: center;
-}
-
 .changePage {
-    position: absolute;
-    left: 5vh;
-    bottom: 5vh;
+    margin-left: 5vh;
+    margin-bottom: 5vh;
 }

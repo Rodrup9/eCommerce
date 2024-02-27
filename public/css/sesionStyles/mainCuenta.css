@@ -4,17 +4,32 @@
     max-height: 100%;
     margin: 0 auto;
     background-color: var(--formularioBox);
-    padding: 20px 50px 0 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-fieldset {
-    border: none;
+.center-elements {
+    margin: auto;
+    max-width: 80%;
+    width: 80%;
 }
 
-.changePage {
-    position: absolute;
-    left: 5vh;
-    bottom: 5vh;
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+    color: var(--fuenteHeader);
+}
+
+.descripcion {
+    font-size: 15px;
+    margin: 40px 0;
+    text-align: left;
 }
 
 .submit {
@@ -26,4 +41,9 @@ fieldset {
     background-color: var(--hoverHeader);
     border: 0;
     color: var(--fuenteHeader);
+}
+
+.regresar {
+    position: absolute;
+    bottom: 0;
 }

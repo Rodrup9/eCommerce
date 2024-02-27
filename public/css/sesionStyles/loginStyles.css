@@ -5,31 +5,23 @@
     max-height: 100%;
     margin: 0;
     box-shadow: 60px -5px 150px -22px var(--formularioBoxShadow);
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-center {
+    margin: auto 40px;
+    width: 80%;
+    max-width: 80%;
 }
 
 h1 {
-    padding: 15vh 0 10vh 0;
+    padding: 40px 0 30px 0;
     text-align: center;
-    font-size: 50px;
-    font-weight: 400;
-    color: var(--fuenteHeader);
-}
-
-form {
-    padding: 0 10%;
-}
-
-fieldset {
-    border: none;
-    margin-bottom: 5vh;
-}
-
-label {
-    display: block;
-    font-size: 24px;
-    line-height: 29px;
-    margin-left: 30px;
+    font-size: 35px;
     color: var(--fuenteHeader);
 }
 
@@ -42,11 +34,6 @@ label {
     background-color: var(--hoverHeader);
     border: 0;
     color: var(--fuenteHeader);
-}
-
-p, a {
-    color: var(--fuenteHeader);
-    text-align: center;
 }
 
 .changePage {

@@ -27,6 +27,6 @@ class SesionController extends Controller
     }
 
     public function reestablecer() {
-        return view('reestablecer', ['nameView' => 'Reestablecer contraseña']);
+        return view('sesion.reestablecer', ['nameView' => 'Reestablecer contraseña']);
     }
 }

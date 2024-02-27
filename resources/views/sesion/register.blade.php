@@ -6,39 +6,60 @@
 
 @section('main')
     <div class="container-left">
-        <form action="{{route('confirmar')}}" method="POST">
-            <h1>Registrarse</h1>
-            <fieldset>
-                <label for="">Nombre de usuario</label>
-                <input type="text" name="username">
-            </fieldset>
-
-            <fieldset>
-                <label for="">Nombre</label>
-                <input type="text" name="name">
-            </fieldset>
-
-            <fieldset>
-                <label for="">Apellidos</label>
-                <input type="text" name="lastName">
-            </fieldset>
-            
-            <fieldset>
-                <label for="">Correo</label>
-                <input type="email" name="email">
-            </fieldset>
-
-            <fieldset>
-                <label for="password">Contraseña</label>
-                <input type="password" name="password">
-            </fieldset>
-            
-            <fieldset>
-                <label for="password">Confirmar contraseña</label>
-                <input type="password" name="password_confirmation">
-            </fieldset>
-            <button class="submit" type="submit">Registrarse</button>
-        </form>
+        <div class="container-center">
+            <h1>Registrate</h1>
+            <form action="{{route('confirmar')}}" method="POST">
+                <fieldset>
+                    <label for="">Nombre de usuario</label>
+                    <input type="text" name="username">
+                    @error('username')
+                        <span class="alert">*{{$message}}</span>
+                    @enderror
+                </fieldset>
+    
+                <fieldset>
+                    <label for="">Nombre</label>
+                    <input type="text" name="name">
+                    @error('username')
+                        <span class="alert">*{{$message}}</span>
+                    @enderror
+                </fieldset>
+    
+                <fieldset>
+                    <label for="">Apellidos</label>
+                    <input type="text" name="lastName">
+                    @error('username')
+                        <span class="alert">*{{$message}}</span>
+                    @enderror
+                </fieldset>
+                
+                <fieldset>
+                    <label for="">Correo</label>
+                    <input type="email" name="email">
+                    @error('username')
+                        <span class="alert">*{{$message}}</span>
+                    @enderror
+                </fieldset>
+    
+                <fieldset>
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="password">
+                    @error('username')
+                        <span class="alert">*{{$message}}</span>
+                    @enderror
+                </fieldset>
+                
+                <fieldset>
+                    <label for="password">Confirmar contraseña</label>
+                    <input type="password" name="password_confirmation">
+                    @error('username')
+                        <span class="alert">*{{$message}}</span>
+                    @enderror
+                </fieldset>
+                <button class="submit" type="submit">Registrarse</button>
+            </form>
+        </div>
+        
 
         <div class="container-right">
             <h1 class="title-right">Ingresar con</h1>
