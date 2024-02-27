@@ -1,12 +1,14 @@
 @extends('layouts.header')
 
 @section("cssPage")
-    <link rel="stylesheet" href="/css/ProductoVendedor.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    {{-- <link rel="stylesheet" href="/css/ProductoVendedor.css"> --}}
+    <link rel="stylesheet" href="/css/AgregarProducto.css">
 @endsection
 
 @section('main')
-    <section class="contenido_producto">
-        <form action="" method="post" >
+    <div class="contenido-principal">
+        <form action="">
             <div class="datos_producto">
                 <h1 class="subtitle">Nuevo Producto</h1>
                 <div class="info_principal">
@@ -40,8 +42,10 @@
                         <input class="inlargo" type="text" name="" id="">
                     </div>
                 </div>
+                <div class="btn-avanzado-des">Avanzado</div>
             </div>
-            <div class="opc_avanzada">
+            <div class="avanzado">
+                <div class="opc_avanzada ocultar">
                     <h3 class="subtitle">Configuración avanzada</h3>
                     <div class="centro-agg-img">
                         <img class="img-central"  src="https://www.innovasport.com/medias/gorra-new-era-59fifty-chicago-white-sox-authentic-2018-is-70358700-1.jpg?context=bWFzdGVyfGltYWdlc3wyMTc5OTh8aW1hZ2UvanBlZ3xpbWFnZXMvaGE1L2gzYy85NzkzNjU5NDA0MzE4LmpwZ3xiMjhkNjc1ZGE5YWQ0YzQxMTg2MmU3ZjY2ZWZlYjkzYzNmY2E2YWU2ZGQyYmFhZjFjMjE5ZjNlYTMzNjAwYzRi" alt="">
@@ -59,22 +63,32 @@
                     <input class="inlargo" type="number" name="" id="">
                     <label class="labFomr" for="">Fecha limite de descuento</label>
                     <input class="inlargo" type="date" name="" id="">
-            </div>
-            <div class="img_producto">
-                <img class="img-principal" src="https://www.innovasport.com/medias/gorra-new-era-59fifty-chicago-white-sox-authentic-2018-is-70358700-1.jpg?context=bWFzdGVyfGltYWdlc3wyMTc5OTh8aW1hZ2UvanBlZ3xpbWFnZXMvaGE1L2gzYy85NzkzNjU5NDA0MzE4LmpwZ3xiMjhkNjc1ZGE5YWQ0YzQxMTg2MmU3ZjY2ZWZlYjkzYzNmY2E2YWU2ZGQyYmFhZjFjMjE5ZjNlYTMzNjAwYzRi" alt="">
-                <div class="img_producto2">
-                    <input type="file"   accept="image/*" />
-                    <label for="" class="limg">Agregar Imagen </label>
-
+                    <div class="btn-avanzado-close"><span class="material-symbols-outlined">close</span></div>
                 </div>
-                
-
-                <div class="btns_acciones">
-                    <a class="btnregresar" href="{{route("vendedor.pedidos")}}">Regresar</a>
-                    <button class="aggProduc" type="submit">Agregar Producto</button>
+                <div class="img_producto">
+                    <img class="img-principal" src="https://www.innovasport.com/medias/gorra-new-era-59fifty-chicago-white-sox-authentic-2018-is-70358700-1.jpg?context=bWFzdGVyfGltYWdlc3wyMTc5OTh8aW1hZ2UvanBlZ3xpbWFnZXMvaGE1L2gzYy85NzkzNjU5NDA0MzE4LmpwZ3xiMjhkNjc1ZGE5YWQ0YzQxMTg2MmU3ZjY2ZWZlYjkzYzNmY2E2YWU2ZGQyYmFhZjFjMjE5ZjNlYTMzNjAwYzRi" alt="">
+                    <div class="img_producto2">
+                        <input type="file"   accept="image/*" />
+                        <label for="" class="limg">Agregar Imagen </label>
+                    </div>
+                    <div class="btns_acciones">
+                        <a class="btnregresar" href="{{route("vendedor.pedidos")}}">Regresar</a>
+                        <button class="aggProduc" type="submit">Agregar Producto</button>
+                    </div>
                 </div>
             </div>
+
         </form>
-    </section>
+    </div>
     
 @endsection
+
+@section('jsPage')
+    <script src="/js/moduloVendedor.js"></script>
+@endsection
+
+
+
+
+
+    
