@@ -10,7 +10,7 @@
     <div class="contenido-principal">
         <form action="">
             <div class="datos_producto">
-                <h1 class="subtitle">Nuevo Producto</h1>
+                <h1 class="subtitle1">Nuevo Producto</h1>
                 <div class="info_principal">
                     <label class="labFomr" for="">Nombre del producto</label>
                     <input class="inlargo" type="text">
