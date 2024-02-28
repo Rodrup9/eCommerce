@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreRegister;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class SesionController extends Controller
@@ -11,15 +13,23 @@ class SesionController extends Controller
     }
 
     public function login() {
-
+        
     }
 
     public function register() {
         return view('sesion.register', ['nameView' => 'Register']);
     }
 
-    public function check() {
-        
+    public function check(StoreRegister $request) {
+        $user = new User();
+        $user->nombre = $request->name;
+        $user->apellido_pa = $request->apellido_pa;
+        $user->apellido_ma = $request->apellido_ma;
+        $user->correo = $request->email;
+        $user->nombre_de_usuario = $request->username;
+        $user->contraseña = $request->password;
+
+        return redirect()->route('login');
     }
 
     public function recuperacion() {

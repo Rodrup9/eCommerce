@@ -9,9 +9,11 @@
         <div class="container-center">
             <h1>Registrate</h1>
             <form action="{{route('confirmar')}}" method="POST">
+                @csrf
+                
                 <fieldset>
                     <label for="">Nombre de usuario</label>
-                    <input type="text" name="username">
+                    <input type="text" name="username" value="{{old('username')}}">
                     @error('username')
                         <span class="alert">*{{$message}}</span>
                     @enderror
@@ -20,23 +22,32 @@
                 <fieldset>
                     <label for="">Nombre</label>
                     <input type="text" name="name">
-                    @error('username')
+                    @error('name')
                         <span class="alert">*{{$message}}</span>
                     @enderror
                 </fieldset>
     
                 <fieldset>
-                    <label for="">Apellidos</label>
-                    <input type="text" name="lastName">
-                    @error('username')
+                    <label for="">Apellido paterno</label>
+                    <input type="text" name="apellido_pa">
+                    @error('apellido_pa')
                         <span class="alert">*{{$message}}</span>
                     @enderror
+                </fieldset>
+
+                <fieldset>
+                    <label for="">Apellido materno</label>
+                    <input type="text" name="apellido_ma">
+                        @foreach ($errors->get('apellido_ma') as $item)
+                            <span class="alert">{{$item}}</span>
+                        @endforeach
+                        {{-- <span class="alert">*{{$message}}</span> --}}
                 </fieldset>
                 
                 <fieldset>
                     <label for="">Correo</label>
                     <input type="email" name="email">
-                    @error('username')
+                    @error('email')
                         <span class="alert">*{{$message}}</span>
                     @enderror
                 </fieldset>
@@ -44,7 +55,7 @@
                 <fieldset>
                     <label for="password">Contraseña</label>
                     <input type="password" name="password">
-                    @error('username')
+                    @error('password')
                         <span class="alert">*{{$message}}</span>
                     @enderror
                 </fieldset>
@@ -52,9 +63,6 @@
                 <fieldset>
                     <label for="password">Confirmar contraseña</label>
                     <input type="password" name="password_confirmation">
-                    @error('username')
-                        <span class="alert">*{{$message}}</span>
-                    @enderror
                 </fieldset>
                 <button class="submit" type="submit">Registrarse</button>
             </form>
