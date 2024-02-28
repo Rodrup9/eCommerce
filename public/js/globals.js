@@ -15,6 +15,8 @@ const colorThemes = {
         boxShadowSubmenu: '0 0 0 transparent',
         borderCard: '1px solid transparent',
         verde: '#24c32e',
+        formularioBox: '#474747',
+        formularioBoxShadow: '#D9992340',
     },
     claro: {
         colorHeader: '#d99923',
@@ -31,6 +33,8 @@ const colorThemes = {
         boxShadowSubmenu: '2px 2px 5px #d1d1d1',
         borderCard: '1px solid #e7e7e7',
         verde: '#167f1d',
+        formularioBox: '#D99923',
+        formularioBoxShadow: '#32323340',
     },
 };
   
