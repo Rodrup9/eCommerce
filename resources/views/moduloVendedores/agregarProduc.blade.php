@@ -46,8 +46,8 @@
             </div>
             <div class="avanzado">
                 <div class="opc_avanzada ocultar">
-                    <h3 class="subtitle">Configuración avanzada</h3>
                     <div class="centro-agg-img">
+                        <h3 class="subtitle">Configuración avanzada</h3>
                         <img class="img-central"  src="https://www.innovasport.com/medias/gorra-new-era-59fifty-chicago-white-sox-authentic-2018-is-70358700-1.jpg?context=bWFzdGVyfGltYWdlc3wyMTc5OTh8aW1hZ2UvanBlZ3xpbWFnZXMvaGE1L2gzYy85NzkzNjU5NDA0MzE4LmpwZ3xiMjhkNjc1ZGE5YWQ0YzQxMTg2MmU3ZjY2ZWZlYjkzYzNmY2E2YWU2ZGQyYmFhZjFjMjE5ZjNlYTMzNjAwYzRi" alt="">
                         <input class="inimage" type="file"  alt="">
                         <label for="" class="limg">Agregar Imagen</label>
