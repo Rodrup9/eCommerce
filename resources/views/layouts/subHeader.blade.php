@@ -21,7 +21,7 @@
             <p>Parece haber un problema: sin opciones</p>
         @endif
     </div>
-    @if ($nameView == "Catalogo")
+    @if ($nameView == "Catalogo" || $nameView == 'Historial')
         <div class="filtros">
             <i class='bx bx-filter bxMy' ></i>
             

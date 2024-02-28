@@ -176,6 +176,7 @@ img{
     border-radius: 5px;
     border: 1px solid transparent;
     transition: 200ms;
+    text-decoration: none;
 }
 
 .btnIcon{
