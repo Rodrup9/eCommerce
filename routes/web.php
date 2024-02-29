@@ -9,6 +9,7 @@ use App\Http\Controllers\CatalogoController;
 use App\Http\Controllers\VendedorController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SesionController;
 use App\Http\Controllers\ShoppingCartController;
 
 /*
@@ -26,6 +27,17 @@ use App\Http\Controllers\ShoppingCartController;
 Route::get('/', function () {
     return view('welcome');
 });*/
+
+//Rutas para el manejo de las sesiones
+Route::controller(SesionController::class)->group(function() {
+    Route::get('login', 'index')->name('login');
+    Route::post('iniciar', 'login')->name('signin');
+    Route::get('register', 'register')->name('register');
+    Route::post('registro', 'check')->name('confirmar');
+
+    Route::get('recuperacionDeCuenta', 'recuperacion')->name('recuperar');
+    Route::get('reestablecerContraseña', 'reestablecer')->name('reestablecer');
+});
 
 
 Route::controller(HomeController::class)->group(function(){
