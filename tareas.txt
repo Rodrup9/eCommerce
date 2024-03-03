@@ -1,0 +1,4 @@
+Corregir el slider
+Rediseñar el catalogo
+Retocar la vista de confirmar datos de shoppingCart
+Retocar la vista de detalles
