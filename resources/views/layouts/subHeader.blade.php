@@ -22,9 +22,14 @@
         @endif
     </div>
     @if ($nameView == "Catalogo" || $nameView == 'Historial')
-        <div class="filtros">
-            <i class='bx bx-filter bxMy' ></i>
-            
+        <div class="opcionsBoxIcons">
+            <div class="layoutViewChange opcionsIcons">
+                <i id="flexColumn" onclick="layoutViewChange(true)" class='bx bxs-grid bxMy iconActivate'></i>
+                <i id="flexRow" onclick="layoutViewChange(false)" class='bx bx-list-ul bxMy'></i>   
+            </div>
+            <div class="opcionsIcons">
+                <i class='bx bx-filter bxMy' ></i>
+            </div>
         </div>
     @endif
 </nav>

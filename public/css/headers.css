@@ -163,14 +163,23 @@
     transition: all 200ms;
 }
 
-.filtros{
+.opcionsBoxIcons{
+    display: flex;
+    gap: 20px;
+}
+
+.opcionsIcons{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.filtros i:hover{
+.opcionsIcons i:hover{
     color: var(--hoverElements);
+}
+
+.layoutViewChange{
+    gap: 5px;
 }
 /*
 .navAsideDes{

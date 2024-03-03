@@ -38,8 +38,8 @@
                 @if ($nameView != "Home")
                     <a href="/home" class="opcionPrincipal">Home</a>
                 @endif
-                <a href="#" class="opcionPrincipal">Iniciar sesión</a>
-                <a href="#" class="opcionPrincipal">Registrarse</a>
+                <a href="{{route('login')}}" class="opcionPrincipal">Iniciar sesión</a>
+                <a href="{{route('register')}}" class="opcionPrincipal">Registrarse</a>
             </div>
         </nav>
         @section('subMenu')

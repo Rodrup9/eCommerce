@@ -12,9 +12,9 @@
             </div>
         </div>
         <div class="priceDes">
-            @if (empty($descuento))
+            @if (!$descuento)
                 <p class="precio">{{$precio}}</p>
-            @else
+            @elseif($descuento)
                 <p class="precio">De <span class="precioActivo">${{$precio}}</span></p>
                 <p>a <span class="descuento">${{$descuento}}</span></p>
             @endif

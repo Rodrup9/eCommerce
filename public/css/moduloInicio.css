@@ -12,6 +12,18 @@
     padding: 30px 40px 40px 40px;
 }
 
+.ofertaPanel{
+    overflow: hidden;
+}
+
+.ofertaPanel img{
+    width: 100%;
+}
+
+.iconActivate{
+    color: var(--hoverElements);
+}
+
 .tittle{
     display: flex;
     justify-content: space-between;

@@ -23,11 +23,21 @@
             <div class="boxSliderOfertas">
                 <div class="boxBoxOfertas">
                     <div class="boxOfertaMain">
-                        <div class="oferta1">Oferta</div>
-                        <div class="oferta2">Oferta</div>
-                        <div class="oferta3">Oferta</div>
-                        <div class="oferta4">Oferta</div>
-                        <div class="oferta5">Oferta</div>
+                        <a href="#" class="ofertaPanel oferta1">
+                            <img src="https://picsum.photos/200/300" alt="">
+                        </a>
+                        <a href="#" class="ofertaPanel oferta2">
+                            <img src="https://picsum.photos/200/300" alt="">
+                        </a>
+                        <a href="#" class="ofertaPanel oferta3">
+                            <img src="https://picsum.photos/200/300" alt="">
+                        </a>
+                        <a href="#" class="ofertaPanel oferta4">
+                            <img src="https://picsum.photos/200/300" alt="">
+                        </a>
+                        <a href="#" class="ofertaPanel oferta5">
+                            <img src="https://picsum.photos/200/300" alt="">
+                        </a>
                     </div>
                 </div>
             </div>

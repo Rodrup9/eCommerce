@@ -13,7 +13,7 @@ class SesionController extends Controller
     }
 
     public function login() {
-        
+        return redirect()->route('home');
     }
 
     public function register() {
