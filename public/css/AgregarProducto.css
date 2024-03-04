@@ -93,7 +93,7 @@ img{
     width: 40px;
     height: 40px;
     position: relative;
-    top: -800px;
+    top: -700px;
     left: 700px;
     background-color: var(--btnConfirm);
     cursor: pointer;
@@ -184,3 +184,12 @@ img{
     margin-bottom: 40px;
 }
 
+
+.cortos-principal{
+    display: flex;
+    flex-direction: row;
+}
+.inscortos{
+    display: flex;
+    flex-direction: column;
+}
