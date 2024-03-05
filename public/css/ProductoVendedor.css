@@ -166,3 +166,12 @@ p{
 
 
 
+/*Boton img*/
+.btnAddImg input[type="file"]{
+    display: none;
+}
+
+.btnAddImg{
+    display: inline-block;
+    position: relative;
+}
