@@ -30,6 +30,9 @@ Route::controller(SesionController::class)->group(function() {
     Route::post('registro', 'check')->name('confirmar');
 
     Route::get('recuperacionDeCuenta', 'recuperacion')->name('recuperar');
+
+    Route::get('verificacionDeCodigo', 'verificacion')->name('verificacion');
+
     Route::get('reestablecerContraseña', 'reestablecer')->name('reestablecer');
 });
 

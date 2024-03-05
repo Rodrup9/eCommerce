@@ -36,6 +36,10 @@ class SesionController extends Controller
         return view('sesion.recuperar', ['nameView' => 'Recuperación de cuenta']);
     }
 
+    public function verificacion() {
+        return view('sesion.verificacion', ['nameView' => 'Verificación de código']);
+    }
+
     public function reestablecer() {
         return view('sesion.reestablecer', ['nameView' => 'Reestablecer contraseña']);
     }

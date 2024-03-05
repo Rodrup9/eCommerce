@@ -14,50 +14,55 @@
                 <fieldset>
                     <label for="">Nombre de usuario</label>
                     <input type="text" name="username" value="{{old('username')}}">
-                    @error('username')
-                        <span class="alert">*{{$message}}</span>
-                    @enderror
+                    @foreach ($errors->get('username') as $item)
+                        <span class="alert">*{{$item}}</span>
+                        <br>
+                    @endforeach
                 </fieldset>
     
                 <fieldset>
                     <label for="">Nombre</label>
-                    <input type="text" name="name">
-                    @error('name')
-                        <span class="alert">*{{$message}}</span>
-                    @enderror
+                    <input type="text" name="name" value="{{old('name')}}">
+                    @foreach ($errors->get('name') as $item)
+                        <span class="alert">*{{$item}}</span>
+                        <br>
+                    @endforeach
                 </fieldset>
     
                 <fieldset>
                     <label for="">Apellido paterno</label>
-                    <input type="text" name="apellido_pa">
-                    @error('apellido_pa')
-                        <span class="alert">*{{$message}}</span>
-                    @enderror
+                    <input type="text" name="apellido_pa" value="{{old('apellido_pa')}}">
+                    @foreach ($errors->get('apellido_pa') as $item)
+                        <span class="alert">*{{$item}}</span>
+                        <br>
+                    @endforeach
                 </fieldset>
 
                 <fieldset>
                     <label for="">Apellido materno</label>
-                    <input type="text" name="apellido_ma">
-                        @foreach ($errors->get('apellido_ma') as $item)
-                            <span class="alert">{{$item}}</span>
-                        @endforeach
-                        {{-- <span class="alert">*{{$message}}</span> --}}
+                    <input type="text" name="apellido_ma" value="{{old('apellido_ma')}}">
+                    @foreach ($errors->get('apellido_ma') as $item)
+                        <span class="alert">*{{$item}}</span>
+                        <br>
+                    @endforeach
                 </fieldset>
                 
                 <fieldset>
                     <label for="">Correo</label>
-                    <input type="email" name="email">
-                    @error('email')
-                        <span class="alert">*{{$message}}</span>
-                    @enderror
+                    <input type="email" name="email" value="{{old('email')}}">
+                    @foreach ($errors->get('email') as $item)
+                        <span class="alert">*{{$item}}</span>
+                        <br>
+                    @endforeach
                 </fieldset>
     
                 <fieldset>
                     <label for="password">Contraseña</label>
                     <input type="password" name="password">
-                    @error('password')
-                        <span class="alert">*{{$message}}</span>
-                    @enderror
+                    @foreach ($errors->get('password') as $item)
+                        <span class="alert">*{{$item}}</span>
+                        <br>
+                    @endforeach
                 </fieldset>
                 
                 <fieldset>
