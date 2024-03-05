@@ -190,3 +190,12 @@ img{
     margin-bottom: 40px;
 }
 
+
+.cortos-principal{
+    display: flex;
+    flex-direction: row;
+}
+.inscortos{
+    display: flex;
+    flex-direction: column;
+}

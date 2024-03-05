@@ -59,10 +59,17 @@
                         <img class="img-mas" src="https://www.innovasport.com/medias/gorra-new-era-59fifty-chicago-white-sox-authentic-2018-is-70358700-1.jpg?context=bWFzdGVyfGltYWdlc3wyMTc5OTh8aW1hZ2UvanBlZ3xpbWFnZXMvaGE1L2gzYy85NzkzNjU5NDA0MzE4LmpwZ3xiMjhkNjc1ZGE5YWQ0YzQxMTg2MmU3ZjY2ZWZlYjkzYzNmY2E2YWU2ZGQyYmFhZjFjMjE5ZjNlYTMzNjAwYzRi" alt="">
                         <img class="img-mas" src="https://www.innovasport.com/medias/gorra-new-era-59fifty-chicago-white-sox-authentic-2018-is-70358700-1.jpg?context=bWFzdGVyfGltYWdlc3wyMTc5OTh8aW1hZ2UvanBlZ3xpbWFnZXMvaGE1L2gzYy85NzkzNjU5NDA0MzE4LmpwZ3xiMjhkNjc1ZGE5YWQ0YzQxMTg2MmU3ZjY2ZWZlYjkzYzNmY2E2YWU2ZGQyYmFhZjFjMjE5ZjNlYTMzNjAwYzRi" alt="">
                     </div>
-                    <label class="labFomr" for="">Agregar descuento inicial</label>
-                    <input class="inlargo" type="number" name="" id="">
-                    <label class="labFomr" for="">Fecha limite de descuento</label>
-                    <input class="inlargo" type="date" name="" id="">
+                    <div class="cortos-principal">
+                        <div class="inscortos">
+                            <label class="labFomr" for="">Agregar descuento inicial</label>
+                            <input class="incorto" type="number" name="" id="">
+                        </div>
+                        <div class="inscortos">
+                            <label class="labFomr " for="">Fecha limite de descuento</label>
+                            <input class="incorto" type="date" name="" id="">
+                        </div>
+                    </div>
+                    
                     <div class="btn-avanzado-close"><span class="material-symbols-outlined">close</span></div>
                 </div>
                 <div class="img_producto">
