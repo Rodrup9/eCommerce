@@ -7,6 +7,7 @@
 
 
 .Imgencita {
+    size: 50px;
     padding: 6px 0px 10px 28px;
     margin-right: 5px; /* Agrega margen derecho de 2px */
 }
@@ -17,8 +18,8 @@
 
 .details {
     background-color: var(--colorElements);
-    padding: 20px 10px 20px 10px;
-    margin: 5px 0px 20px 5px;
+    padding: 25px;
+    margin: 5px 30px 20px 5px;
 }
 
 .letra{
@@ -40,12 +41,12 @@ width: 80%;
 
 .contenedor-details{
     background-color: var(--colorElements);
-    padding: 5px;
+    padding: 25px;
     margin: 20px 50px 10px 20px;
 }
 .contenedor-tecnicos{
     background-color: var(--colorElements);
-    padding: 5px;
+    padding: 25px;
     margin: 20px 50px 10px 20px;
 }
 .section-coco{
@@ -53,7 +54,7 @@ width: 80%;
 }
 .contenedor-coments{
     background-color: var(--colorElements);
-    padding: 5px;
+    padding: 25px;
     margin: 20px 30px 10px 20px;
 }
 

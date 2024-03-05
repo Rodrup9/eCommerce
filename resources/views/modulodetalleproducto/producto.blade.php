@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="/css/moduloInicio.css">
     <link rel="stylesheet" href="/css/components.css">
     <link rel="stylesheet" href="/css/detalles.css">
+    <link rel="stylesheet" href="/css/moduloAdminEcommerce.css">  
 
 @endsection
 
@@ -25,10 +26,16 @@
                 <a class="btnText btnConfirm" href="">Comprar Ahora</a>
                 <a class="btnText btnCancel" href="">Agregar al carrito</a>
             </div>
-            <div class="calif">
-                <h1>Calificacion del producto</h1>
-                <img class="calificacion" src="https://picsum.photos/200/300" alt="">
-                <p>Articulos vendidos: 300</p>
+            <div class="sourseDetalles">
+                <p>Califiación</p>
+                <span class="calificacion">75%</span>
+                <div class="">
+                    <span class="start"><i class='bx bxs-star' ></i></span>
+                    <span class="start"><i class='bx bxs-star' ></i></span>
+                    <span class="start"><i class='bx bxs-star' ></i></span>
+                    <span class="start"><i class='bx bx-star' ></i></span>
+                    <span class="start"><i class='bx bx-star' ></i></span>
+                </div>
             </div>
         </div>
         <div class="contenedor-details">
