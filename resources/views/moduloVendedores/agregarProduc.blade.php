@@ -61,7 +61,7 @@
                     </div>
                     <div class="cortos-principal">
                         <div class="inscortos">
-                            <label class="labFomr" for="">Agregar descuento inicial</label>
+                            <label class="labFomr" for="">Descuento inicial</label>
                             <input class="incorto" type="number" name="" id="">
                         </div>
                         <div class="inscortos">
