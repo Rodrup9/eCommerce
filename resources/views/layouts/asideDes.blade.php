@@ -28,7 +28,33 @@
                     <ul>
                         <li><a href="#">Iniciar sesión</a></li>
                         <li><a href="#">Registrarse</a></li>
-                        <li><a href="#">Carrito de Compras</a></li>
+                        <li><a href="{{route('homeShoppingCart')}}">Carrito de Compras</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Opcion de prueba Admin</h2>
+                    <ul>
+                        <li><a href="/adminEcommerce">Admin Ecommerce</a></li>
+                    </ul>
+                </li>
+            @elseif ($nameView == 'Historial')
+                <li>
+                    <h2>Compras</h2>
+                    <ul>
+                        <li><a href="#">Historial</a></li>
+                        <li><a href="#">Otrs opciones</a></li>
+                    </ul>
+                </li>
+            @elseif ($nameView == 'Lista')
+                <li>
+                    <h2>Opciones</h2>
+                    <ul>
+                        <li><a href="/adminListaEcommerce/vendedores">Vendedores</a></li>
+                        <li><a href="/adminListaEcommerce/usuarios">Usuarios</a></li>
+                        <li><a href="/adminListaEcommerce/reportes">Reportes</a></li>
+                        <li><a href="/adminListaEcommerce/productos">Productos</a></li>
+                        <li><a href="/adminListaEcommerce/comentarios">Comentarios</a></li>
+                        <li><a href="#">Perfil</a></li>
                     </ul>
                 </li>
             @endif
