@@ -99,11 +99,14 @@ img{
     width: 40px;
     height: 40px;
     position: relative;
-    top: -600px;
-    left: 700px;
-    background-color: var(--btnConfirm);
+    top: -640px;
+    left: 720px;
+    /* background-color: var(--btnConfirm); */
     cursor: pointer;
     border-radius: 50%;
+}
+.iconn{
+    font-size: 50px;
 }
 
 .img-central{
@@ -117,7 +120,10 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20%;
+    
 }
 
 .img-mas{
@@ -167,8 +173,9 @@ img{
 .imgs-agg{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin: 10px 0px;
+    justify-content: space-around;
+    margin-top:29px;
+    margin-left: 25%;
 }
 
 
@@ -194,8 +201,16 @@ img{
 .cortos-principal{
     display: flex;
     flex-direction: row;
+    margin-left: 25%;
+    justify-content: space-between;
 }
 .inscortos{
     display: flex;
     flex-direction: column;
+}
+
+
+.opc_avanzada p{
+    margin-left: 50%;
+    
 }

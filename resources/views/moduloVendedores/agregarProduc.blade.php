@@ -72,7 +72,7 @@
                         </div>
                     </div>
                     
-                    <div class="btn-avanzado-close"><span class="material-symbols-outlined">close</span></div>
+                    <div class="btn-avanzado-close"><span class="material-symbols-outlined iconn">cancel</span></div>
                 </div>
                 <div class="img_producto">
                     <img class="img-principal" src="https://www.innovasport.com/medias/gorra-new-era-59fifty-chicago-white-sox-authentic-2018-is-70358700-1.jpg?context=bWFzdGVyfGltYWdlc3wyMTc5OTh8aW1hZ2UvanBlZ3xpbWFnZXMvaGE1L2gzYy85NzkzNjU5NDA0MzE4LmpwZ3xiMjhkNjc1ZGE5YWQ0YzQxMTg2MmU3ZjY2ZWZlYjkzYzNmY2E2YWU2ZGQyYmFhZjFjMjE5ZjNlYTMzNjAwYzRi" alt="">
