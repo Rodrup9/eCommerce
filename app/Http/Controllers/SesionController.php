@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreRegister;
+use App\Mail\Recuperacion;
 use App\Models\User;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Mail;
 
 class SesionController extends Controller
 {
@@ -34,6 +36,14 @@ class SesionController extends Controller
 
     public function recuperacion() {
         return view('sesion.recuperar', ['nameView' => 'Recuperación de cuenta']);
+    }
+
+    public function code(Request $request) {
+        $correo = $request->email;
+
+        Mail::to($correo)->send(new Recuperacion);
+
+        return redirect()->route('verificacion');
     }
 
     public function verificacion() {

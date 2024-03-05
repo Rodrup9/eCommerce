@@ -36,6 +36,7 @@ Route::controller(SesionController::class)->group(function() {
     Route::post('registro', 'check')->name('confirmar');
 
     Route::get('recuperacionDeCuenta', 'recuperacion')->name('recuperar');
+    Route::get('sendCode', 'code')->name('sendCode');
 
     Route::get('verificacionDeCodigo', 'verificacion')->name('verificacion');
 
