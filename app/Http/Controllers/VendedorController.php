@@ -7,8 +7,11 @@ use Illuminate\View\View;
 
 class VendedorController extends Controller
 {
+    public function pedidos(): View{
+        return view("moduloVendedores.listaPedido",['nameView' => 'Pedidos']);
+    }
     public function index(): View{
-        return view("moduloVendedores.listaPedido",['nameView' => 'Home']);
+        return view("moduloVendedores.homeVendedor",['nameView' => 'Home']);
     }
 
     public function detalles(){

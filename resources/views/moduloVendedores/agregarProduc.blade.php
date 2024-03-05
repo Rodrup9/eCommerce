@@ -2,7 +2,7 @@
 
 @section("cssPage")
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    {{-- <link rel="stylesheet" href="/css/ProductoVendedor.css"> --}}
+    <link rel="stylesheet" href="/css/ProductoVendedor.css">
     <link rel="stylesheet" href="/css/AgregarProducto.css">
 @endsection
 
@@ -49,8 +49,10 @@
                     <div class="centro-agg-img">
                         <h3 class="subtitle">Configuración avanzada</h3>
                         <img class="img-central"  src="https://www.innovasport.com/medias/gorra-new-era-59fifty-chicago-white-sox-authentic-2018-is-70358700-1.jpg?context=bWFzdGVyfGltYWdlc3wyMTc5OTh8aW1hZ2UvanBlZ3xpbWFnZXMvaGE1L2gzYy85NzkzNjU5NDA0MzE4LmpwZ3xiMjhkNjc1ZGE5YWQ0YzQxMTg2MmU3ZjY2ZWZlYjkzYzNmY2E2YWU2ZGQyYmFhZjFjMjE5ZjNlYTMzNjAwYzRi" alt="">
-                        <input class="inimage" type="file"  alt="">
-                        <label for="" class="limg">Agregar Imagen</label>
+                        <label for="addImg" class="btnText btnConfirm">
+                            <i class='bx bxs-file-image'></i>
+                            <span>Agregar imagen</span> 
+                        </label>
                     </div>
                     
                     <p>Imagenes añadidas</p>
@@ -59,17 +61,27 @@
                         <img class="img-mas" src="https://www.innovasport.com/medias/gorra-new-era-59fifty-chicago-white-sox-authentic-2018-is-70358700-1.jpg?context=bWFzdGVyfGltYWdlc3wyMTc5OTh8aW1hZ2UvanBlZ3xpbWFnZXMvaGE1L2gzYy85NzkzNjU5NDA0MzE4LmpwZ3xiMjhkNjc1ZGE5YWQ0YzQxMTg2MmU3ZjY2ZWZlYjkzYzNmY2E2YWU2ZGQyYmFhZjFjMjE5ZjNlYTMzNjAwYzRi" alt="">
                         <img class="img-mas" src="https://www.innovasport.com/medias/gorra-new-era-59fifty-chicago-white-sox-authentic-2018-is-70358700-1.jpg?context=bWFzdGVyfGltYWdlc3wyMTc5OTh8aW1hZ2UvanBlZ3xpbWFnZXMvaGE1L2gzYy85NzkzNjU5NDA0MzE4LmpwZ3xiMjhkNjc1ZGE5YWQ0YzQxMTg2MmU3ZjY2ZWZlYjkzYzNmY2E2YWU2ZGQyYmFhZjFjMjE5ZjNlYTMzNjAwYzRi" alt="">
                     </div>
-                    <label class="labFomr" for="">Agregar descuento inicial</label>
-                    <input class="inlargo" type="number" name="" id="">
-                    <label class="labFomr" for="">Fecha limite de descuento</label>
-                    <input class="inlargo" type="date" name="" id="">
-                    <div class="btn-avanzado-close"><span class="material-symbols-outlined">close</span></div>
+                    <div class="cortos-principal">
+                        <div class="inscortos">
+                            <label class="labFomr" for="">Descuento inicial</label>
+                            <input class="incorto" type="number" name="" id="">
+                        </div>
+                        <div class="inscortos">
+                            <label class="labFomr " for="">Fecha limite de descuento</label>
+                            <input class="incorto" type="date" name="" id="">
+                        </div>
+                    </div>
+                    
+                    <div class="btn-avanzado-close"><span class="material-symbols-outlined iconn">cancel</span></div>
                 </div>
                 <div class="img_producto">
                     <img class="img-principal" src="https://www.innovasport.com/medias/gorra-new-era-59fifty-chicago-white-sox-authentic-2018-is-70358700-1.jpg?context=bWFzdGVyfGltYWdlc3wyMTc5OTh8aW1hZ2UvanBlZ3xpbWFnZXMvaGE1L2gzYy85NzkzNjU5NDA0MzE4LmpwZ3xiMjhkNjc1ZGE5YWQ0YzQxMTg2MmU3ZjY2ZWZlYjkzYzNmY2E2YWU2ZGQyYmFhZjFjMjE5ZjNlYTMzNjAwYzRi" alt="">
-                    <div class="img_producto2">
-                        <input type="file"   accept="image/*" />
-                        <label for="" class="limg">Agregar Imagen </label>
+                    <div class="btnAddImg">
+                        <input type="file" id="addImg"  accept="image/*" />
+                        <label for="addImg" class="btnText btnConfirm">
+                            <i class='bx bxs-file-image'></i>
+                            <span>Agregar imagen</span> 
+                        </label>
                     </div>
                     <div class="btns_acciones">
                         <a class="btnregresar" href="{{route("vendedor.pedidos")}}">Regresar</a>
