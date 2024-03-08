@@ -6,7 +6,6 @@ use App\Http\Requests\StoreRegister;
 use App\Mail\Recuperacion;
 use App\Models\User;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Mail;
 
 class SesionController extends Controller
 {

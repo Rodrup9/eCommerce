@@ -10,5 +10,9 @@
     <h1>Example email for practice</h1>
 
     <p>This email will be for send code</p>
+
+    <br>
+
+    <p>{{printf(uniqid(10)) }}</p>
 </body>
 </html>
