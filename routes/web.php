@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\AdminEcommerceController;
 
 use App\Http\Controllers\CatalogoController;
+use App\Http\Controllers\DetallesController;
 use App\Http\Controllers\VendedorController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -85,3 +86,7 @@ Route::controller(AdminEcommerceController::class)->group(function(){
     Route::get('/adminListaEcommerce/{lista?}/{data?}', 'detalles')->name('adminListDetalles');
 });
 
+
+Route::controller(DetallesController::class)->group(function(){
+    Route::get("/detalles","index")->name('detalles');
+});
