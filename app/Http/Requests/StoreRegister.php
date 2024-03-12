@@ -22,12 +22,30 @@ class StoreRegister extends FormRequest
     public function rules(): array
     {
         return [
-            'username' => 'required',
-            'name' => 'required',
-            'apellido_pa' => 'required',
-            'apellido_ma' => 'required|min:4',
+            'username' => 'required|min:6|alpha_num:ascii',
+            'name' => 'required|min:3',
+            'apellido_pa' => 'required|min:3|alpha:ascii',
+            'apellido_ma' => 'required|min:3|alpha:ascii',
             'email' => 'required|email',
-            'password' => 'required',
+            'password' => 'required|confirmed',
+        ];
+    }
+
+    public function messages() {
+        return [
+            'username.alpha' => 'No ingrese caracteres especiales',
+            'username.required' => 'Debe de completar este campo',
+            'username.min' => 'El nombre debe tener por lo menos 6 caracteres',
+
+            'name.required' => 'Debe de completar este campo',
+
+            'apellido_pa.required' => 'Debe de completar este campo',
+
+            'apellido_ma.required' => 'Debe de completar este campo',
+
+            'email.required' => 'Debe de completar este campo',
+
+            'password.required' => 'Debe de completar este campo',
         ];
     }
 }
