@@ -12,6 +12,7 @@ return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Contracts\\PathsRepository' => $vendorDir . '/laravel/pint/app/Contracts/PathsRepository.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+<<<<<<< HEAD
     'App\\Factories\\ConfigurationFactory' => $vendorDir . '/laravel/pint/app/Factories/ConfigurationFactory.php',
     'App\\Factories\\ConfigurationResolverFactory' => $vendorDir . '/laravel/pint/app/Factories/ConfigurationResolverFactory.php',
     'App\\Http\\Controllers\\AdminEcommerceController' => $baseDir . '/app/Http/Controllers/AdminEcommerceController.php',
@@ -19,6 +20,16 @@ return array(
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
     'App\\Http\\Controllers\\ShoppingCartController' => $baseDir . '/app/Http/Controllers/ShoppingCartController.php',
+=======
+    'App\\Http\\Controllers\\AdminEcommerceController' => $baseDir . '/app/Http/Controllers/AdminEcommerceController.php',
+    'App\\Http\\Controllers\\AgregarProductoController' => $baseDir . '/app/Http/Controllers/AgregarProductoController.php',
+    'App\\Http\\Controllers\\CatalogoController' => $baseDir . '/app/Http/Controllers/CatalogoController.php',
+    'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
+    'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
+    'App\\Http\\Controllers\\SesionController' => $baseDir . '/app/Http/Controllers/SesionController.php',
+    'App\\Http\\Controllers\\ShoppingCartController' => $baseDir . '/app/Http/Controllers/ShoppingCartController.php',
+    'App\\Http\\Controllers\\VendedorController' => $baseDir . '/app/Http/Controllers/VendedorController.php',
+>>>>>>> RamaIvan
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
@@ -29,7 +40,11 @@ return array(
     'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
     'App\\Http\\Middleware\\ValidateSignature' => $baseDir . '/app/Http/Middleware/ValidateSignature.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
+<<<<<<< HEAD
     'App\\Kernel' => $vendorDir . '/laravel/pint/app/Kernel.php',
+=======
+    'App\\Http\\Requests\\StoreRegister' => $baseDir . '/app/Http/Requests/StoreRegister.php',
+>>>>>>> RamaIvan
     'App\\Models\\Calidad_producto' => $baseDir . '/app/Models/Calidad_producto.php',
     'App\\Models\\Categoria' => $baseDir . '/app/Models/Categoria.php',
     'App\\Models\\Comentario' => $baseDir . '/app/Models/Comentario.php',
