@@ -59,6 +59,7 @@ Route::controller(CatalogoController::class)->group(function(){
 
 Route::controller(AgregarProductoController::class)->group(function(){
     Route::get("/vendedor/producto","NuevoProducto")->name("vendedor.producto");
+     Route::post("/vendedor/producto","AgregarProducto")->name("vendedor.agg.producto");
 });
 
 Route::controller(VendedorController::class)->group(function(){
