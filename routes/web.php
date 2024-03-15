@@ -2,7 +2,6 @@
 
 
 use App\Http\Controllers\AgregarProductoController;
-use App\Mail\Recuperacion;
 use Illuminate\Http\Request;
 
 use App\Http\Controllers\AdminEcommerceController;
@@ -39,13 +38,8 @@ Route::controller(SesionController::class)->group(function() {
     Route::post('registro', 'check')->name('confirmar');
 
     Route::get('recuperacionDeCuenta', 'recuperacion')->name('recuperar');
-    Route::get('sendCode', function(Request $request) {
-        $correo = $request->email;
 
-        Mail::to($correo)->send(new Recuperacion);
-
-        return redirect()->route('verificacion');
-    })->name('sendCode');
+    Route::get('sendCode', 'code')->name('sendCode');
 
     Route::get('verificacionDeCodigo', 'verificacion')->name('verificacion');
 
@@ -84,6 +78,7 @@ Route::controller(AdminEcommerceController::class)->group(function(){
     Route::get('/adminEcommerce', 'index')->name('homeAdminEcommerce');
     Route::get('/adminListaEcommerce/{lista?}', 'lista')->name('adminListaEcommerce');
     Route::get('/adminListaEcommerce/{lista?}/{data?}', 'detalles')->name('adminListDetalles');
+    Route::get('/perfil', 'perfil')->name('perfil');
 });
 
 

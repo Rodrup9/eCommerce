@@ -10,6 +10,7 @@
             <h1>Recuperación de cuenta</h1>
             <p class="descripcion">Te enviaremos un codigo de recuperación para tú contraseña</p>
             <form action="{{route('sendCode')}}" method="GET">
+                @csrf
                 <fieldset>
                     <label for="">Correo electrónico</label>
                     <input type="email" name="email">

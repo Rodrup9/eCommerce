@@ -6,6 +6,7 @@ use App\Http\Requests\StoreRegister;
 use App\Mail\Recuperacion;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class SesionController extends Controller
 {
@@ -29,6 +30,8 @@ class SesionController extends Controller
         $user->correo = $request->email;
         $user->nombre_de_usuario = $request->username;
         $user->contraseña = $request->password;
+
+        $user->save();
 
         return redirect()->route('login');
     }

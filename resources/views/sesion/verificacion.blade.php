@@ -10,6 +10,7 @@
             <h1>Recuperación de cuenta</h1>
             <p class="descripcion">Ingrese el código que fue enviado por medio del correo electrónico que proporcionó</p>
             <form action="">
+                @csrf
                 <fieldset>
                     <label for="">Código de verificación</label>
                     <input type="text" name="code">

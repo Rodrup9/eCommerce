@@ -12,6 +12,8 @@
             <form action="" method="POST">
                 @method('put')
 
+                @csrf
+                
                 <fieldset>
                     <label for="">Nueva contraseña</label>
                     <input type="password" name="password">
