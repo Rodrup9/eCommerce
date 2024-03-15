@@ -26,7 +26,7 @@
             <i class='bx bx-message-dots' ></i>
             <h2>Comentarios</h2>
         </a>
-        <a href="#" class="cardMenuAdmin">
+        <a href="{{route('perfil')}}" class="cardMenuAdmin">
             <i class='bx bx-user' ></i>
             <h2>Perfil</h2>
         </a>

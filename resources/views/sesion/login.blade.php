@@ -9,6 +9,7 @@
         <div class="container-center">
             <h1>Iniciar Sesión</h1>
             <form action="{{route('signin')}}" method="POST">
+                @csrf
                 <fieldset>
                     <label for="">Usuario o correo</label>
                     <input type="text" name="search">
