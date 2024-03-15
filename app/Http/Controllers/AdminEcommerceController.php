@@ -29,4 +29,10 @@ class AdminEcommerceController extends Controller
             'nameDetalle' => $data
         ]);
     }
+
+    public function perfil() {
+        return view('sesion.perfil', [
+            'nameView' => 'Perfil'
+        ]);
+    }
 }
